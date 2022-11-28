@@ -31,3 +31,5 @@ Overflow, float 을 잘 설명해놓은 사이트 =>
 [개념 정리](https://velog.io/@kimconut/Day9.-overflow-hidden이-float의-문제점을-해결할-때-쓰이는-이유)
 
 ### 결과
+![Nov-28-2022 18-22-27](https://user-images.githubusercontent.com/86929961/204242626-1b2a151c-14fe-45aa-a247-1fd692396c4d.gif)
+
