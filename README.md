@@ -5,4 +5,5 @@
 ### 1주차
 
 1. HTML / CSS 를 활용하여 제작한 나만의 자기소개 홈페이지 (2022_11_28)
-2. Git / Github 실습
+2. Git / Github 실습 (2022_11_29)
+3. Git clone, degit, htmlhint 실습 (2022_11_30)
