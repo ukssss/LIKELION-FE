@@ -21,14 +21,14 @@ body {
 .main,
 .slogan,
 .footer-inner {
-  width: 880px;
+  width: 940px;
   margin: 0 auto;
 }
 
 /* 헤더 */
 .header {
   background: pink;
-  padding: 0 30px; /* 숏핸드 표기법 `상 우 하 좌`(시계방향) */
+  padding: 0 30px;
   height: 15vh;
 }
 
@@ -47,10 +47,6 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   padding: 30px;
-}
-
-.group {
-  margin: 0 15px;
 }
 
 .group1 {
@@ -78,11 +74,14 @@ body {
 /* 푸터 */
 .footer {
   background: gray;
+  width: 940px;
+  margin: 0 auto;
 }
 
 .footer-inner {
   background: silver;
   height: 15vh;
-  width: 500px;
-  overflow: hidden;
+  position: relative;
+  top: -10px;
+  left: -10px;
 }
