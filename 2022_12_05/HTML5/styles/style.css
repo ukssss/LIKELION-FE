@@ -71,7 +71,7 @@ body {
 
 /* .member -> 10점, li -> 1점, ::before -> 1점 => 12점 */
 /* .member li::before {
-  content: ":";
+  content: "|";
 } */
 
 /* .member -> 10점, .first -> 10점, ::before -> 1점 => 12점 */
