@@ -60,9 +60,8 @@ body {
   justify-content: flex-end;
 }
 
-.member li {
-  /* background-color: pink; */
-  display: inline-block;
+.member a {
+  text-transform: uppercase;
 }
 
 /* 우선순위 규칙 */
