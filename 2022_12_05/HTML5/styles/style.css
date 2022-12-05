@@ -1,5 +1,6 @@
 @import url(./normalize.css);
 @import url(./reset.css);
+@import url(./fontello.css);
 
 /* 기본 스타일*/
 *,
@@ -83,17 +84,12 @@ body {
   content: "";
 } */
 
-/* !important; 무조건 내가 우선할거야 ! */
-
-.member li:nth-child(n + 2)::before {
+/* .member li:nth-child(n + 2)::before {
   content: ":";
   background-color: skyblue;
-}
+} */
 
-.member li:nth-child(n + 2):nth-child(-n + 4) {
-  content: ":";
-  background-color: yellow;
-}
+/* !important; 무조건 내가 우선할거야 ! */
 
 .divider {
   margin-right: 4px;
