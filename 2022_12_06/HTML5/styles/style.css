@@ -93,6 +93,16 @@ body {
   margin-right: 4px;
 }
 
+/* 메인 메뉴 */
+.menu {
+  border-radius: 0 0 5px 5px;
+  background: #e85e2c linear-gradient(to bottom, #1e5799 0%, #ef9126 0%, #e85e2c 35%, #e85e2c 70%, #ef9126 100%);
+
+  height: 47px;
+  border-top: 2px solid currentColor;
+  padding-left: 232px;
+}
+
 /* 비주얼 */
 .visual {
   background: orange;
