@@ -54,6 +54,8 @@ body {
   background-color: aqua;
   text-align: right;
   padding: 4px 0;
+  position: relative;
+  right: -10px;
 }
 
 .member li {
@@ -69,9 +71,9 @@ body {
 }
 
 /* 마지막 li 요소에 포함된 a 요소를 선택하여 오른쪽 padding 값을 0 으로 재정의 하는 방법 */
-.member li:last-child a {
+/* .member li:last-child a {
   padding-right: 0;
-}
+} */
 
 .divider {
   margin-right: 4px;
