@@ -33,12 +33,9 @@ body {
   /* em, rem 단위를 사용해보기 */
   font-size: 1.4rem;
   color: #212121;
-  background: #ccc
-    linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
-  font-family: "Pretendard Variable", Pretendard, -apple-system,
-    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
-    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  background: #ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
+    "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 /* 레이아웃 */
@@ -104,14 +101,7 @@ body {
 
 .menu {
   border-top: 2px solid currentColor;
-  background: #e85e2c
-    linear-gradient(
-      to bottom,
-      #ef9126 0%,
-      #e85e2c 35%,
-      #e85e2c 70%,
-      #ef9126 100%
-    );
+  background: #e85e2c linear-gradient(to bottom, #ef9126 0%, #e85e2c 35%, #e85e2c 70%, #ef9126 100%);
   border-radius: 0 0 5px 5px;
   padding-left: 230px;
   height: 47px;
@@ -211,10 +201,26 @@ body {
 }
 
 /* 비주얼 */
-.visual {
-  background: orange;
-  height: 10vh;
+@keyframes moveEffect {
+  0% {
+    font-size: 12px;
+  }
+  100% {
+    font-size: 24px;
+  }
 }
+
+.visual {
+  background: pink;
+  height: 120px;
+}
+
+.visual-text {
+  background: coral;
+  animation-name: moveEffect;
+  animation-duration: 2000ms;
+}
+
 /* 메인 */
 .main {
   background: lightgreen;
@@ -249,8 +255,7 @@ body {
 }
 /* 푸터 */
 .footer {
-  background: #ccc
-    linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
+  background: #ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
 }
 .footer-inner {
   background: silver;
