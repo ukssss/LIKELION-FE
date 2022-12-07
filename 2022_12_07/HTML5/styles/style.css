@@ -140,6 +140,14 @@ body {
   display: none;
 }
 
+.is-active .sub-menu {
+  display: block;
+}
+
+.sub-menu li {
+  float: left;
+}
+
 /* 비주얼 */
 .visual {
   background: orange;
