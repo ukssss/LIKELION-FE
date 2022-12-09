@@ -312,10 +312,13 @@ body {
 
 .login-form fieldset {
   position: relative;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 5px;
 }
 
-.login-form div {
-  margin-bottom: 6px;
+.user-email,
+.user-password {
+  margin-bottom: 5px;
 }
 
 .login-form label {
@@ -327,13 +330,21 @@ body {
   width: 90px;
   height: 22px;
   border: 1px solid #aaa;
+  padding: 1px 1px 1px 3px;
+  border-radius: 3px;
 }
 
 .login-form button {
   position: absolute;
   top: 0;
   right: 0;
-  width: 50px;
+  height: 48px;
+  background-color: orangered;
+  color: #fff;
+  border: 0;
+  padding: 0 8px;
+  border-radius: 5px;
+  font-size: 13px;
 }
 
 .sign {
