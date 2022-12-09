@@ -259,10 +259,11 @@ body {
 
 /* 메인 */
 .main {
-  background: lightgreen;
-  height: 50vh;
   display: flow-root;
-  padding: 0 15px;
+  background: #fff;
+  min-height: 450px;
+  padding: 30px 15px;
+  border-radius: 15px 15px 0 0;
 }
 
 .group {
@@ -271,7 +272,6 @@ body {
 }
 
 .group1 {
-  background-color: violet;
   width: 250px;
 }
 .group2 {
@@ -281,6 +281,20 @@ body {
 .group3 {
   background-color: gold;
   width: 190px;
+}
+
+/* 로그인 */
+.login {
+  background: #e8852e radial-gradient(circle at right top, #e8852e, #ed552f);
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 0 #ccc;
+  padding: 10px;
+}
+
+.login-title {
+  color: yellow;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 /* 슬로건 */

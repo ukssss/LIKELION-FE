@@ -26,14 +26,11 @@ html {
 }
 
 body {
-  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
-    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
-    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-size: 1.4rem;
   background-color: #ccc;
-  background-image: url("./images/bg_flower.png"),
-    linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
+  background-image: url("./images/bg_flower.png"), linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
   background-repeat: no-repeat, repeat;
   background-position: 50% 0, 0 0;
 
@@ -47,28 +44,27 @@ a {
 }
 
 /* 본문 바로가기 링크 */
-.skip-nav{
+.skip-nav {
   background: yellow;
   position: relative;
   z-index: 10;
 }
 
-.skip-nav a{
+.skip-nav a {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   background: #000;
   color: #fff;
-  text-align: justify-content: center;
+  justify-content: center;
   text-align: center;
   padding: 1em 0;
   transform: translate(-110%, 0);
 }
 
-.skip-nav a:focus{
+.skip-nav a:focus {
   transform: none;
-  
 }
 
 /* 레이아웃 */
@@ -126,15 +122,7 @@ a {
 
 .menu {
   border-radius: 0 0 5px 5px;
-  background: #e85e2c
-    linear-gradient(
-      to bottom,
-      #1e5799 0%,
-      #ef9126 0%,
-      #e85e2c 35%,
-      #e85e2c 70%,
-      #ef9126 100%
-    );
+  background: #e85e2c linear-gradient(to bottom, #1e5799 0%, #ef9126 0%, #e85e2c 35%, #e85e2c 70%, #ef9126 100%);
 
   height: 47px;
   border-top: 2px solid currentColor;
@@ -266,15 +254,13 @@ a {
 
 .visual::before {
   /* background-color: pink; */
-  background-image: url(./images/ani_flower_01.png),
-    url(./images/ani_flower_02.png);
+  background-image: url(./images/ani_flower_01.png), url(./images/ani_flower_02.png);
   background-position: 0 -10px, 600px 0;
 }
 
 .visual::after {
   /* background-color: yellow; */
-  background-image: url(./images/ani_flower_03.png),
-    url(./images/ani_flower_04.png);
+  background-image: url(./images/ani_flower_03.png), url(./images/ani_flower_04.png);
   background-position: 300px 0, 800px 0;
   animation-delay: 1000ms;
 }
@@ -418,8 +404,7 @@ a {
 
 .validation-list a {
   display: block;
-  background: url(./images/validation_icon.png) no-repeat 20px 50%,
-    linear-gradient(to bottom, #ccc, #eee);
+  background: url(./images/validation_icon.png) no-repeat 20px 50%, linear-gradient(to bottom, #ccc, #eee);
   border: 1px solid #aaa;
   padding: 10px 10px 10px 40px;
   border-radius: 20px;
@@ -651,27 +636,29 @@ a {
 }
 
 /* 신규 이벤트 및  관련 사이트 */
-.gradient-effect{
+.gradient-effect {
   border: 1px solid #aaa;
   border-radius: 5px;
   padding: 10px;
   background: #ccc linear-gradient(to bottom, #ccc, #eee);
 }
 
-.margin-top-default{
+.margin-top-default {
   margin-top: 20px;
 }
 
-.event-title, .related-title, .favorite-title{
+.event-title,
+.related-title,
+.favorite-title {
   font-size: 1.5rem;
   font-weight: 700;
 }
 
-.accent-color{
+.accent-color {
   color: #ed552f;
 }
 
-.event{
+.event {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -679,7 +666,7 @@ a {
   padding-bottom: 10px;
 }
 
-.event-button-wrapper{
+.event-button-wrapper {
   overflow: hidden;
   height: 22px;
   padding: 2px;
@@ -687,7 +674,7 @@ a {
   transform: translate(2px, -2px);
 }
 
-.event-button-wrapper button{
+.event-button-wrapper button {
   width: 19px;
   border: 0;
   height: 0 !important;
@@ -697,34 +684,33 @@ a {
   line-height: 24px;
 }
 
-.event-button-wrapper button:focus{
+.event-button-wrapper button:focus {
   /* outline-offset: -2px; */
 }
 
-
-.event-button-next{
+.event-button-next {
   background-position: -36px 0;
 }
 
-.event div:last-child{
+.event div:last-child {
   width: 100%;
   margin-top: 10px;
 }
 
-.event-thumbnail img{
+.event-thumbnail img {
   box-shadow: 7px 7px 0 0 #aaa;
 }
 
-.event-brief{
+.event-brief {
   margin-top: 12px;
   line-height: 1.5;
 }
 
-.related{
+.related {
   margin-top: 10px;
 }
 
-.related-list{
+.related-list {
   margin-top: 10px;
   background: #fff;
   border: 1px solid #aaa;
@@ -734,32 +720,33 @@ a {
   transition: height 400ms, padding 400ms 400ms;
 }
 
-.related-list:hover, .related-list:focus{
+.related-list:hover,
+.related-list:focus {
   height: 147px;
   padding: 10px 0;
 }
 
-.related-list a{
+.related-list a {
   display: block;
   line-height: 25px;
   text-indent: 25px;
 }
 
-.related-list a:focus{
+.related-list a:focus {
   outline-offset: -2px;
 }
 
-.favorite{
+.favorite {
   position: relative;
 }
 
-.favorite-list{
+.favorite-list {
   list-style: none;
   margin-top: 10px;
   counter-reset: number;
 }
 
-.favorite-list li{
+.favorite-list li {
   counter-increment: number;
   margin-top: 8px;
   /* font-size: 18px; */
@@ -770,7 +757,7 @@ a {
   align-items: center;
 }
 
-.favorite-list li::before{
+.favorite-list li::before {
   content: counter(number);
   color: #fff;
   background-color: #aaa;
@@ -782,7 +769,7 @@ a {
   margin-right: 0.5em;
 }
 
-.favorite-list em{
+.favorite-list em {
   display: inline-block;
   background-image: url("./images/rank.png");
   background-repeat: no-repeat;
@@ -798,21 +785,19 @@ a {
   /* margin-top: 5px; */
 }
 
-.favorite-list .stop{
+.favorite-list .stop {
   background-position: 0 50%;
 }
 
-.favorite-list .down{
+.favorite-list .down {
   background-position: 0 100%;
 }
 
-
-.favorite-more{
+.favorite-more {
   position: absolute;
   top: -8px;
   right: -8px;
 }
-
 
 /* 슬로건 */
 .slogan {
@@ -830,7 +815,7 @@ a {
   line-height: 83px;
 }
 
-.slogan-title::after{
+.slogan-title::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -840,46 +825,38 @@ a {
   background: url("./images/coffee.png") no-repeat;
 }
 
-.slogan-content{
+.slogan-content {
   color: #989763;
 }
 
-
-.slogan-content q::before{
+.slogan-content q::before {
   display: inline-block;
   font-size: 3rem;
   transform: translateY(10px);
 }
 
-.slogan-content q::after{
+.slogan-content q::after {
   content: "";
 }
 
 /* 푸터 */
 .footer {
   background-color: #ccc;
-  background-image: linear-gradient(
-    to bottom,
-    #ccc 0%,
-    #eee 35%,
-    #fff 70%,
-    #fff 100%
-  );
+  background-image: linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
 }
 
 .footer-inner {
   position: relative;
   padding: 15px 100px 15px 180px;
-
 }
 
-.footer-logo{
+.footer-logo {
   position: absolute;
   top: 45px;
   left: 35px;
 }
 
-.guide-list{
+.guide-list {
   background: #7b8385;
   color: #fff;
   display: flex;
@@ -890,22 +867,22 @@ a {
   border-radius: 20px;
 }
 
-.guide-list a{
+.guide-list a {
   display: block;
   padding: 6px 12px;
   text-transform: uppercase;
 }
 
-.address{
+.address {
   margin-top: 15px;
 }
 
-.copyright{
+.copyright {
   display: block;
   margin-top: 5px;
 }
 
-.badge-container{
+.badge-container {
   position: absolute;
   right: 0;
   top: 15px;
