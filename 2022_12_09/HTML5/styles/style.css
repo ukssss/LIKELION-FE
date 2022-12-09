@@ -3,7 +3,8 @@
 @import url(./reset.css);
 
 /* 숨김 콘텐츠 */
-.a11y-hidden {
+.a11y-hidden,
+legend {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -293,8 +294,51 @@ body {
 
 .login-title {
   color: yellow;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 700;
+  text-indent: 10px;
+}
+
+.login-form,
+.sign {
+  background-color: #fff;
+}
+
+.login-form {
+  margin-top: 10px;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 0 10px;
+}
+
+.login-form fieldset {
+  position: relative;
+}
+
+.login-form div {
+  margin-bottom: 6px;
+}
+
+.login-form label {
+  display: inline-block;
+  width: 4em;
+}
+
+.login-form input {
+  width: 90px;
+  height: 22px;
+  border: 1px solid #aaa;
+}
+
+.login-form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+}
+
+.sign {
+  border-radius: 0 0 5px 5px;
+  padding: 0 10px 10px 10px;
 }
 
 /* 슬로건 */
