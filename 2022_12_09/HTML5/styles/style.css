@@ -375,23 +375,25 @@ body {
 
 .validation-list li {
   margin-top: 10px;
-  width: 250px;
-  height: 40px;
-}
-
-.validation-list img {
-  margin-right: 3px;
 }
 
 .validation-list a {
   display: block;
-  background: #aaa linear-gradient(#aaa, #fff);
-  border: 1px solid #ccc;
+  background: url("./images/validation_icon.png") no-repeat 30px 50%, #ccc linear-gradient(to bottom, #aaa, #eee);
   border-radius: 30px;
+  border: 1px solid #aaa;
+  padding: 8px 15px 8px 55px;
   width: 100%;
   height: 100%;
-  text-align: center;
-  padding-top: 8px;
+}
+
+.validation-list a:hover,
+.validation-list a:focus {
+  color: red;
+}
+
+.validation-list li::before {
+  background: #ccc url("./images/validation_icon.png");
 }
 
 /* 슬로건 */
