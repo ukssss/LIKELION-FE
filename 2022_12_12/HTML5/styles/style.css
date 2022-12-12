@@ -411,24 +411,31 @@ body {
 }
 
 .term-list {
-  background-color: yellow;
   margin-top: 1rem;
 }
 
 .term-list div {
-  background-color: pink;
   margin-top: 10px;
   display: flow-root;
 }
 
-.term-list-subject {
-  background-color: lime;
+.term-list-subject,
+.term-list-brief {
   float: right;
   width: 145px;
 }
 
+.term-list-subject {
+  color: #296897;
+  font-weight: 500;
+}
+
+.term-list-brief {
+  margin-top: 5px;
+  line-height: 1.5;
+}
+
 .term-list-thumbnail {
-  background-color: purple;
   float: left;
 }
 
@@ -436,10 +443,14 @@ body {
   vertical-align: middle;
 }
 
-.term-list-brief {
-  background-color: coral;
-  float: right;
+.cross .term-list-subject,
+.cross .term-list-brief {
+  float: left;
   width: 145px;
+}
+
+.cross .term-list-thumbnail {
+  float: right;
 }
 
 /* 슬로건 */
