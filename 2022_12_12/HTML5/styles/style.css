@@ -396,6 +396,52 @@ body {
   background: #ccc url("./images/validation_icon.png");
 }
 
+/* 웹 관련 용어 */
+.term {
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+  margin-top: 20px;
+  padding: 10px 15px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.term-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.term-list {
+  background-color: yellow;
+  margin-top: 1rem;
+}
+
+.term-list div {
+  background-color: pink;
+  margin-top: 10px;
+  display: flow-root;
+}
+
+.term-list-subject {
+  background-color: lime;
+  float: right;
+  width: 145px;
+}
+
+.term-list-thumbnail {
+  background-color: purple;
+  float: left;
+}
+
+.term-list-thumbnail img {
+  vertical-align: middle;
+}
+
+.term-list-brief {
+  background-color: coral;
+  float: right;
+  width: 145px;
+}
+
 /* 슬로건 */
 .slogan {
   background: skyblue;
