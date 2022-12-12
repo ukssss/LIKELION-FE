@@ -33,13 +33,9 @@ a {
 body {
   color: #212121;
   font-size: 1.4rem;
-  font-family: "Pretendard Variable", Pretendard, -apple-system,
-    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
-    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  background: url("./images/bg_flower.png") no-repeat 50% 0,
-    #ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%)
-      repeat 0 0;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
+    "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  background: url("./images/bg_flower.png") no-repeat 50% 0, #ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%) repeat 0 0;
 }
 
 /* 레이아웃 */
@@ -105,14 +101,7 @@ body {
 
 .menu {
   border-top: 2px solid currentColor;
-  background: #e85e2c
-    linear-gradient(
-      to bottom,
-      #ef9126 0%,
-      #e85e2c 35%,
-      #e85e2c 70%,
-      #ef9126 100%
-    );
+  background: #e85e2c linear-gradient(to bottom, #ef9126 0%, #e85e2c 35%, #e85e2c 70%, #ef9126 100%);
   border-radius: 0 0 5px 5px;
   padding-left: 230px;
   height: 47px;
@@ -252,13 +241,11 @@ body {
 }
 
 .visual::before {
-  background: url("./images/ani_flower_01.png") no-repeat 0 -10px,
-    url("./images/ani_flower_02.png") no-repeat 600px 0;
+  background: url("./images/ani_flower_01.png") no-repeat 0 -10px, url("./images/ani_flower_02.png") no-repeat 600px 0;
 }
 
 .visual::after {
-  background: url("./images/ani_flower_03.png") no-repeat 300px 0,
-    url("./images/ani_flower_04.png") no-repeat 800px 0;
+  background: url("./images/ani_flower_03.png") no-repeat 300px 0, url("./images/ani_flower_04.png") no-repeat 800px 0;
   animation-delay: 1000ms;
 }
 
@@ -388,8 +375,7 @@ body {
 }
 
 .validation-list a {
-  background: url("./images/validation_icon.png") no-repeat 25px 50%,
-    #ccc linear-gradient(to bottom, #ccc, #eee);
+  background: url("./images/validation_icon.png") no-repeat 25px 50%, #ccc linear-gradient(to bottom, #ccc, #eee);
   padding: 0 15px 0 55px;
   border-radius: 30px;
   line-height: 30px;
@@ -505,6 +491,70 @@ body {
   font-size: 1.2rem;
 }
 
+/* 공지사항 및 자료실 */
+.board {
+  margin-top: 20px;
+  position: relative;
+}
+
+.tab-list {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.tab {
+  border: 1px solid #aaa;
+  background-color: #ccc;
+  border-radius: 5px 5px 0 0;
+  padding: 5px 10px;
+  color: #666;
+}
+
+.is-select.tab {
+  background-color: #fff;
+  color: #e85e2c;
+  border-color: currentColor currentColor #fff currentColor;
+}
+
+.tab-panel {
+  display: none;
+  margin-top: 15px;
+}
+
+.is-select.tab-panel {
+  display: block;
+}
+
+.board-list li {
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.board-list a {
+  flex-grow: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.board-list time {
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+
+.board-more {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
+}
+
+.icon-plus::before {
+  color: hsla(110, 50%, 30%, 1);
+}
+
 /* 슬로건 */
 .slogan {
   background: skyblue;
@@ -513,8 +563,7 @@ body {
 }
 /* 푸터 */
 .footer {
-  background: #ccc
-    linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
+  background: #ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
 }
 .footer-inner {
   background: silver;
