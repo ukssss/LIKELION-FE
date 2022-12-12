@@ -276,7 +276,6 @@ body {
   width: 250px;
 }
 .group2 {
-  background-color: salmon;
   width: 380px;
 }
 .group3 {
@@ -451,6 +450,57 @@ body {
 
 .cross .term-list-thumbnail {
   float: right;
+}
+
+/* 검색 폼 */
+.search-form {
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 15px 15px 0 0;
+  padding: 15px 25px 10px;
+  /* width: 300px; */
+}
+
+.search-form-inner {
+  display: flex;
+  /* background-color: yellow; */
+  flex-flow: row nowrap;
+}
+
+.form-group {
+  /* background-color: pink; */
+  flex-grow: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.form-group-label {
+  /* background-color: lime; */
+  white-space: nowrap;
+  margin-right: 10px;
+}
+
+.form-group-input {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  height: 24px;
+  padding: 1px 1px 1px 5px;
+  flex-grow: 1;
+  /* min-width: 0;
+  max-width: 0; */
+}
+
+.search-button {
+  white-space: nowrap;
+  background-color: #000;
+  color: #fff;
+  height: 24px;
+  border: 0;
+  border-radius: 3px;
+  padding: 0 10px;
+  font-size: 1.2rem;
 }
 
 /* 슬로건 */
