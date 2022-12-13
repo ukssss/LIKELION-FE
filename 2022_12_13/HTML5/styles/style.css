@@ -616,17 +616,20 @@ figcaption {
 /* 신규 이벤트 및 관련 사이트 */
 .event {
   border-bottom: 1px solid #aaa;
-  position: relative;
+}
+
+.event-title {
+  display: inline-block;
 }
 
 .event-button-wrapper {
-  background-color: yellow;
   height: 20px;
   overflow: hidden;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   gap: 5px;
+  float: right;
 }
 
 .event-button {
@@ -645,6 +648,12 @@ figcaption {
 .event-brief {
   margin: 10px 0;
 }
+
+.event-thumbnail img {
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px 0 0 #ccc;
+}
+
 .event-brief {
   line-height: 1.5;
 }
@@ -655,7 +664,36 @@ figcaption {
 
 .related-list {
   background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 5px;
   margin-top: 10px;
+  height: 27px;
+  overflow: hidden;
+  /* transition-property: background-color, border-radius;
+  transition-duration: 2000ms;
+  transition-delay: 0ms, 2000ms;
+  transition-timing-function: ease-in-out; */
+  transition: height 400ms 0ms ease-in-out, padding 400ms 0ms ease-in-out;
+  padding: 0;
+}
+
+.related-list:hover,
+.related-list:focus {
+  height: 147px;
+  padding: 10px;
+}
+
+.related-list li {
+  height: 25px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.related-list a {
+  flex-grow: 1;
+  padding: 0 10px;
 }
 
 /* 슬로건 */
@@ -664,6 +702,7 @@ figcaption {
   height: 10vh;
   clear: both;
 }
+
 /* 푸터 */
 .footer {
   background: #ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
