@@ -1,6 +1,7 @@
 @import url(./fontello.css);
 @import url(./normalize.css);
 @import url(./reset.css);
+@import url(./module.css);
 
 /* 숨김 콘텐츠 */
 .a11y-hidden,
@@ -398,11 +399,6 @@ body {
   background: #ccc linear-gradient(to bottom, #ccc, #eee);
 }
 
-.term-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
 .term-list {
   margin-top: 10px;
 }
@@ -571,12 +567,6 @@ body {
   background: #aaa linear-gradient(to right, #ccc, #fff);
 }
 
-.news-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #e85e2c;
-}
-
 .news-link {
   display: block;
 }
@@ -622,6 +612,8 @@ figcaption {
   top: -8px;
   right: -8px;
 }
+
+/* 신규 이벤트 및 관련 사이트 */
 
 /* 슬로건 */
 .slogan {
