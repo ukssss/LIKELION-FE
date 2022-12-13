@@ -606,6 +606,11 @@ body {
   left: 0;
 }
 
+.news-item-thumbnail {
+  box-shadow: 0 15px 10px 5px #ccc;
+  margin-bottom: 15px;
+}
+
 figcaption {
   position: absolute;
   top: 80px;
