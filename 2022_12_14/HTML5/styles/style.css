@@ -708,7 +708,6 @@ figcaption {
 .favorite-list li {
   margin-top: 10px;
   counter-increment: number;
-  background-color: pink;
   position: relative;
 }
 
