@@ -807,7 +807,7 @@ figcaption {
 
 .footer-logo {
   width: 150px;
-  padding: 20px 0 0 35px;
+  padding: 20px 0 0 22px;
 }
 
 .footer-inner-wrapper {
@@ -820,8 +820,7 @@ figcaption {
   background-color: #7b8385;
   color: #fff;
   padding: 4px 45px;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
   text-transform: uppercase;
   border-radius: 30px;
 }
@@ -836,7 +835,4 @@ figcaption {
   display: block;
   font-size: 1.3rem;
   margin-top: 10px;
-}
-
-.badge-wrapper {
 }
