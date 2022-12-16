@@ -8,14 +8,10 @@ body {
 .container {
   background: silver;
   border: 1px solid red;
-  display: flex;
-  flex-flow: row wrap;
-  padding: 12px;
 }
 
 .box {
-  margin: 24px 24px;
-  height: 150px;
+  margin: 0;
 }
 
 /* 모든 디바이스 */
@@ -28,6 +24,11 @@ div[class*="group"] {
   div[class*="group"] {
     width: 50%;
   }
+
+  div.group1,
+  div.group4 {
+    width: 100%;
+  }
 }
 
 /* 1280px 이상일 때 */
@@ -35,41 +36,50 @@ div[class*="group"] {
   div[class*="group"] {
     width: 25%;
   }
+
+  div.group2 {
+    order: 1;
+  }
+
+  div.group1,
+  div.group12 {
+    width: 75%;
+  }
 }
 
-.group1 .box {
+.group1 {
   background: gold;
 }
-.group2 .box {
+.group2 {
   background: pink;
 }
-.group3 .box {
+.group3 {
   background: lightgreen;
 }
-.group4 .box {
+.group4 {
   background: skyblue;
 }
-.group5 .box {
+.group5 {
   background: salmon;
 }
-.group6 .box {
+.group6 {
   background: violet;
 }
-.group7 .box {
+.group7 {
   background: aquamarine;
 }
-.group8 .box {
+.group8 {
   background: lightseagreen;
 }
-.group9 .box {
+.group9 {
   background: MediumPurple;
 }
-.group10 .box {
+.group10 {
   background: MidnightBlue;
 }
-.group11 .box {
+.group11 {
   background: Olive;
 }
-.group12 .box {
+.group12 {
   background: SandyBrown;
 }
