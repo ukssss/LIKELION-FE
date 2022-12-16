@@ -24,6 +24,7 @@
   --accent-favorite: var(--orange);
   --accent-twitter: var(--blue);
 
+  --spacing-xxs: 0.25rem; /* 4px */
   --spacing-xs: 0.5rem; /* 8px */
   --spacing-sm: 0.75rem; /* 12px */
   --spacing-base: 1rem; /* 16px */
