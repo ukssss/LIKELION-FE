@@ -5,45 +5,44 @@
 body {
   margin: 0;
 }
+
 .container {
   background: silver;
   border: 1px solid red;
+  display: grid;
+  grid-template-columns: auto;
+  padding: 24px;
+  gap: 24px;
 }
 
-.box {
-  margin: 0;
+[class*="group"] {
+  height: 150px;
 }
 
-/* 모든 디바이스 */
-div[class*="group"] {
-  width: 100%;
+/* Small Device */
+@media (max-width: 767px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
-/* 768px 이상일 때 */
+/* Medium Device */
 @media (min-width: 768px) {
-  div[class*="group"] {
-    width: 50%;
-  }
-
-  div.group1,
-  div.group4 {
-    width: 100%;
+  .container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* 1280px 이상일 때 */
+/* Large Device */
 @media (min-width: 1280px) {
-  div[class*="group"] {
-    width: 25%;
+  .container {
+    grid-template-columns: repeat(4, 1fr);
   }
 
-  div.group2 {
-    order: 1;
-  }
-
-  div.group1,
-  div.group12 {
-    width: 75%;
+  .group1 {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: span 3;
   }
 }
 
