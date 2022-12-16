@@ -3,6 +3,7 @@
 @import url(./a11y.css);
 @import url(./theme.css);
 @import url(./base.css);
+
 /* 모든 디바이스 (All Device) */
 /* 공통 헤더 */
 .appHeader {
@@ -12,35 +13,42 @@
   padding: var(--spacing-base) var(--spacing-lg);
   gap: var(--spacing-base);
 }
+
 /* 공통 로고*/
 .logo {
   width: 12.75rem; /* 204px */
   height: 3.687rem; /* 59px */
 }
+
 .logo__link {
   display: block;
   width: 100%;
   height: 100%;
   background: url(./../images/webcafe-logo.png) no-repeat 0 0/100% 100%;
 }
+
 /* 공통 멤버서비스 */
 .memberOnly {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
 }
+
 /* 공통 검색 폼 */
 input[type="search"] {
   -webkit-appearance: none;
   appearance: none;
 }
+
 .searchForm__group {
   display: flex;
   flex-flow: row nowrap;
 }
+
 .searchForm__group .formInput {
   margin-right: var(--spacing-xs);
 }
+
 .searchForm__group .formInput__input {
   width: 100%;
   height: 2rem;
@@ -49,6 +57,7 @@ input[type="search"] {
   border-radius: 0.25rem;
   padding: var(--spacing-sxxs) var(--spacing-sm);
 }
+
 .button {
   cursor: pointer;
   height: 2rem;
@@ -57,21 +66,32 @@ input[type="search"] {
   flex: 0 0 auto;
   font-size: var(--text-sm);
 }
+
 .button--none {
   border: 0;
   padding: 0;
   background: transparent;
 }
+
 .button--fill {
   background: var(--secondary-color);
   color: var(--white);
   border: 0;
 }
+
 .button--outline {
   background: transparent;
   color: var(--secondary-color);
   border: 1px solid currentColor;
 }
+
+/* 공통 메인 메뉴 */
+.menu__link {
+  display: block;
+  font-size: var(--text-md);
+  font-weight: 700;
+}
+
 /* 모바일 디바이스 (Mobile Device) */
 @media (min-width: 320px) and (max-width: 768px) {
   /* 모바일 헤더 */
@@ -79,11 +99,13 @@ input[type="search"] {
     background: var(--primary-color);
     color: var(--white);
   }
+
   /* 모바일 멤버서비스 */
   .memberOnly {
     order: -1;
     font-size: var(--text-sm);
   }
+
   /* 모바일 검색 폼 */
   .searchForm__group .formInput {
     flex-grow: 1;
@@ -96,7 +118,7 @@ input[type="search"] {
     position: absolute;
     top: 3.75rem;
     right: var(--spacing-lg);
-    transform: translate(-(var(--spacing-xxs)), -(var(--spacing-xxs)));
+    transform: translate(-0.25rem, -0.25rem);
   }
 
   .button--burger {
@@ -112,11 +134,12 @@ input[type="search"] {
   .button--burgerBarTop,
   .button--burgerBarMiddle,
   .button--burgerBarBottom {
+    /* pointer-events: none; */
     position: absolute;
     width: 100%;
     height: 20%;
     background: var(--white);
-    border-radius: var(--spacing-xxs);
+    border-radius: 0.25rem;
     left: 0;
     transition: all 200ms;
   }
@@ -135,18 +158,44 @@ input[type="search"] {
     transform: translateY(-100%);
   }
 
-  .button--burger.is--active .button--burgerBarMiddle {
-    transform: translate(-150%, -50%);
-  }
-
   .button--burger.is--active .button--burgerBarTop {
     top: 50%;
     transform: translateY(-50%) rotate(45deg);
   }
 
+  .button--burger.is--active .button--burgerBarMiddle {
+    transform: translate(-150%, -50%);
+  }
+
   .button--burger.is--active .button--burgerBarBottom {
     top: 50%;
     transform: translateY(-50%) rotate(-45deg);
+  }
+
+  /* 모베알 메인 메뉴 */
+  .menu__list {
+    background: var(--accent-opacity-color);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100vh;
+    backdrop-filter: blur(4px);
+    padding: var(--spacing-lg);
+    transform: translateX(-150%);
+  }
+
+  .menu__item {
+    border-bottom: 1px solid var(--silver);
+  }
+
+  .menu__link {
+    padding: var(--spacing-xs);
+  }
+
+  .menu.is--active .menu__list {
+    transform: none;
   }
 }
 
@@ -158,22 +207,21 @@ input[type="search"] {
     margin-left: auto;
     margin-right: auto;
   }
+
   /* 데스크탑 로고 */
   .logo {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
   }
+
   /* 데스크탑 검색 폼 */
   .searchForm__group {
     justify-content: flex-end;
   }
+
   .searchForm__group .formInput {
     width: 25rem;
-  }
-  /* 데스크탑 메인메뉴 제어버튼 */
-  .button--burger {
-    display: none;
   }
 
   /* 데스크탑 메인메뉴 제어버튼 */
@@ -198,11 +246,9 @@ input[type="search"] {
   }
 
   .menu__link {
-    display: block;
     padding: var(--spacing-md) var(--spacing-lg);
     color: var(--white);
     font-size: 1.2rem;
-    font-weight: 700;
     text-shadow: 1px 1px 0 var(--black), -1px -1px 0 var(--black);
   }
 }
