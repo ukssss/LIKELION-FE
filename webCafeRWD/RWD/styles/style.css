@@ -99,6 +99,18 @@ input[type="search"] {
   padding: var(--spacing-base) var(--spacing-lg);
 }
 
+/* 공통 메인 콘텐츠 섹션 제목 */
+.appMain [class*="__title"] {
+  margin-bottom: var(--spacing-base);
+}
+
+.appMain [class*="__koTitle"] {
+  background-color: blue;
+  color: #fff;
+  font-size: var(--text-md);
+  font-weight: 700;
+}
+
 /* 공통 추천 서적 */
 .book {
   background: lightgreen;
