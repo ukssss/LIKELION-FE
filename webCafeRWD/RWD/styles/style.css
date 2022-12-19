@@ -153,31 +153,31 @@ input[type="search"] {
 
 /* 공통 추천 서적 */
 .book {
-  background: lightgreen;
+  /* background: lightgreen; */
   grid-area: book;
 }
 
 /* 공통 새소식 */
 .news {
-  background: yellow;
+  /* background: yellow; */
   grid-area: news;
 }
 
 /* 공통 게시판 */
 .board {
-  background: lightsalmon;
+  /* background: lightsalmon; */
   grid-area: board;
 }
 
 /* 공통 인기 사이트 */
 .favorite {
-  background: skyblue;
+  /* background: skyblue; */
   grid-area: favorite;
 }
 
 /* 공통 트위터 */
 .twitter {
-  background: burlywood;
+  /* background: burlywood; */
   grid-area: twitter;
 }
 
