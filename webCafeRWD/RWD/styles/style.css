@@ -288,33 +288,14 @@ input[type="search"] {
 
   /* 데스크탑 메인 콘텐츠 */
   .appMain {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-
-  .book {
-    grid-column: 1/4;
-    grid-row: 2/3;
-  }
-
-  .news {
-    grid-column: 1/8;
-    grid-row: 1/2;
-  }
-
-  .board {
-    grid-column: 4/7;
-    grid-row: 3/4;
-  }
-
-  .favorite {
-    grid-column: 4/5;
-    grid-row: 2/3;
-  }
-
-  .twitter {
-    grid-column: 2/4;
-    grid-row: 2/3;
+    max-width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+      "news news news news news news news news news news news news"
+      "book book book book twitter twitter twitter twitter twitter favorite favorite favorite"
+      "book book book book . board board board board board board board";
   }
 }
 
