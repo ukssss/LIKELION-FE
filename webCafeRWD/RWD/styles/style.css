@@ -304,10 +304,15 @@ input[type="search"] {
 
   /* 데스크탑 메인 콘텐츠 */
   .appMain {
-    width: var(--container-width);
-    margin-left: auto;
-    margin-right: auto;
     border: 5px solid red;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "news news news news news news news news news news news news"
+      "book book book book twitter twitter twitter twitter twitter favorite favorite favorite "
+      "book book book book . board board board board board board board";
   }
 }
 
