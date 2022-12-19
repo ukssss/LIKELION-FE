@@ -100,15 +100,47 @@ input[type="search"] {
 }
 
 /* 공통 메인 콘텐츠 섹션 제목 */
-.appMain [class*="__title"] {
+[class*="__title"] {
   margin-bottom: var(--spacing-base);
+  /* display: flex;
+  flex-flow: column nowrap;
+  justify-content: center; */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4rem 4rem;
 }
 
-.appMain [class*="__koTitle"] {
-  background-color: blue;
-  color: #fff;
+[class*="__koTitle"] {
   font-size: var(--text-md);
   font-weight: 700;
+
+  background-color: brown;
+  align-self: end;
+}
+
+[class*="__enTitle"] {
+  background-color: purple;
+  align-self: start;
+}
+
+.sprite {
+  background-color: blue;
+  background: blue url("./../images/sprite_main.png") no-repeat;
+  height: 8rem;
+  padding-left: 4rem;
+}
+
+.spriteNews {
+  background-position: 0 40%;
+}
+.spriteBoard {
+  background-position: 0 20%;
+}
+.spriteFavorite {
+  background-position: 0 60%;
+}
+.spriteTwitter {
+  background-position: 0 80%;
 }
 
 /* 공통 추천 서적 */
