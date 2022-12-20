@@ -260,8 +260,34 @@ input[type="search"] {
 
 /* 공통 트위터 */
 .twitter {
-  /* background: burlywood; */
   grid-area: twitter;
+}
+
+.twitter__userInfo {
+  display: inline-flex;
+  gap: var(--spacing-xs);
+}
+
+.twitter__userProfile {
+  width: 25%;
+  min-width: 3.125rem;
+  max-width: 6.25rem;
+  aspect-ratio: 1/1;
+  float: right;
+  shape-outside: circle(50%);
+}
+.twitter__userProfileImage {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--primary-color);
+  border-radius: 70%;
+  object-fit: cover;
+  object-position: 30% 40%;
+}
+
+.twitter__date {
+  display: block;
+  margin-top: var(--spacing-xs);
 }
 
 /* 모바일 디바이스 (Mobile Device) */
