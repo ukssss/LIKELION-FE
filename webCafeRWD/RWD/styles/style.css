@@ -153,8 +153,20 @@ input[type="search"] {
 
 /* 공통 추천 서적 */
 .book {
-  /* background: lightgreen; */
+  background: lightgreen;
   grid-area: book;
+}
+
+.book__cover {
+  width: 80%;
+  margin: 0 auto;
+  background-color: yellow;
+  text-align: center;
+}
+
+.book__coverCaption {
+  margin-top: var(--spacing-md);
+  line-height: 1.6;
 }
 
 /* 공통 새소식 */
