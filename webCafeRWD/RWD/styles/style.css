@@ -221,7 +221,6 @@ input[type="search"] {
 }
 
 .board__list {
-  /* background-color: lime; */
   order: 1;
   flex: 1 1 auto;
   display: flex;
@@ -231,13 +230,11 @@ input[type="search"] {
 }
 
 .board__item {
-  background-color: pink;
   display: flex;
   flex-flow: row nowrap;
 }
 
 .board__link {
-  background-color: yellow;
   flex: 0 1 auto;
   white-space: nowrap;
   overflow: hidden;
@@ -246,7 +243,6 @@ input[type="search"] {
 }
 
 .board__date {
-  background-color: skyblue;
   flex: 0 0 auto;
   width: 6.25em;
   text-align: right;
@@ -385,6 +381,18 @@ input[type="search"] {
       "board"
       "favorite"
       "twitter";
+  }
+
+  /* 모바일 인기 사이트 */
+  .favorite__item {
+    margin-top: var(--spacing-sm);
+  }
+
+  .favorite__link::after {
+    content: attr(data-tooltip);
+    color: var(--accent-favorite);
+    font-size: var(--text-sm);
+    margin-left: var(--spacing-xs);
   }
 }
 
