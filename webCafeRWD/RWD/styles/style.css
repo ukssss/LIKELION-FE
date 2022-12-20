@@ -229,22 +229,25 @@ input[type="search"] {
 }
 
 .board__item {
-  /* background-color: pink; */
+  background-color: pink;
   display: flex;
   flex-flow: row nowrap;
 }
 
 .board__link {
-  /* background-color: yellow; */
-  flex: 1 1 auto;
-  white-space: nowrap;
+  background-color: yellow;
+  flex: 0 1 auto;
+  /* white-space: nowrap; */
   overflow: hidden;
   text-overflow: ellipsis;
+  width: calc(100% - 6.25em);
 }
 
 .board__date {
-  /* background-color: skyblue; */
+  background-color: skyblue;
   flex: 0 0 auto;
+  width: 6.25em;
+  text-align: right;
 }
 
 .board__more {
