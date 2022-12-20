@@ -5,6 +5,13 @@
 @import url(./base.css);
 
 /* 모든 디바이스 (All Device) */
+
+/* 공통 아이콘 (Font Awesome) */
+.far,
+.fas {
+  margin-right: var(--spacing-xs);
+}
+
 /* 공통 헤더 */
 .appHeader {
   position: relative;
@@ -193,6 +200,12 @@ input[type="search"] {
 .news {
   /* background: yellow; */
   grid-area: news;
+}
+
+.news__date {
+  display: block;
+  margin-top: 16px;
+  text-align: end;
 }
 
 /* 공통 게시판 */
