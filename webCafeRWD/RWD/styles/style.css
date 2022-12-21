@@ -370,7 +370,7 @@ input[type="search"] {
     transform: translateY(-50%) rotate(-45deg);
   }
 
-  /* 모베알 메인 메뉴 */
+  /* 모바일 메인 메뉴 */
   .menu__list {
     background: var(--accent-opacity-color);
     position: fixed;
@@ -419,6 +419,31 @@ input[type="search"] {
     color: var(--accent-favorite);
     font-size: var(--text-sm);
     margin-left: var(--spacing-xs);
+  }
+}
+
+/* 태블릿 디바이스 (Tablet Device) */
+@media (min-width: 640px) and (max-width: 768px) {
+  /* 태블릿 메인 콘텐츠 */
+  .appMain {
+  }
+
+  /* 태블릿 추천 서적 */
+  .book {
+  }
+
+  /* 태블릿 게시판 */
+  .board {
+  }
+
+  /* 태블릿 인기사이트 */
+  .favorite {
+  }
+  /* 태블릿 트위터 */
+  .twitter {
+  }
+  /* 태블릿 새소식 */
+  .news {
   }
 }
 
@@ -477,7 +502,6 @@ input[type="search"] {
 
   /* 데스크탑 메인 콘텐츠 */
   .appMain {
-    border: 5px solid red;
     max-width: var(--container-width);
     margin-left: auto;
     margin-right: auto;
