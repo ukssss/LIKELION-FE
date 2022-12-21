@@ -426,24 +426,37 @@ input[type="search"] {
 @media (min-width: 640px) and (max-width: 768px) {
   /* 태블릿 메인 콘텐츠 */
   .appMain {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   /* 태블릿 추천 서적 */
   .book {
+    grid-row: 3/4;
+    grid-column: 2/3;
   }
 
   /* 태블릿 게시판 */
   .board {
+    grid-row: 2/3;
+    grid-column: 1/2;
   }
 
   /* 태블릿 인기사이트 */
   .favorite {
+    grid-row: 2/3;
+    grid-column: 2/3;
   }
+
   /* 태블릿 트위터 */
   .twitter {
+    grid-row: 3/4;
+    grid-column: 1/2;
   }
+
   /* 태블릿 새소식 */
   .news {
+    grid-row: 1/2;
+    grid-column: 1/3;
   }
 }
 
