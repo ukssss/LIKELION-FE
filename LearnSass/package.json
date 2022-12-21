@@ -1,5 +1,10 @@
 {
-  "dependencies": {
+  "scripts": {
+    "start": "",
+    "sass": "sass scss:css",
+    "watch": "npm run sass -- --watch"
+  },
+  "devDependencies": {
     "sass": "^1.57.1"
   }
 }
