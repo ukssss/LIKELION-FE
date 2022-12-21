@@ -292,7 +292,7 @@ input[type="search"] {
 
 /* 공통 푸터 */
 .appFooter {
-  background: var(--dark-brown);
+  background: var(--primary-color);
   color: var(--white);
   padding: var(--spacing-xl) var(--spacing-lg);
   display: flex;
@@ -440,6 +440,17 @@ input[type="search"] {
     font-size: var(--text-sm);
     margin-left: var(--spacing-xs);
   }
+
+  /* 모바일 푸터 */
+  .appFooter {
+    font-size: var(--text-sm);
+  }
+
+  /* 모바일 주소 */
+  .address {
+    display: flex;
+    flex-flow: column nowrap;
+  }
 }
 
 /* 태블릿 디바이스 (Tablet Device) */
@@ -539,6 +550,11 @@ input[type="search"] {
       "news news news news news news news news news news news news"
       "book book book book twitter twitter twitter twitter twitter favorite favorite favorite"
       "book book book book . board board board board board board board";
+  }
+
+  /* 데스크탑 푸터 */
+  .appFooter {
+    align-items: center;
   }
 }
 
