@@ -1,0 +1,20 @@
+.wrap {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .wrap {
+    height: -webkit-fill-available;
+  }
+}
+
+footer {
+  background-color: skyblue;
+}
+
+.max-width {
+  width: min(calc(var(--max-width) * 1rem), calc(100% - 10vw));
+  margin: auto;
+}

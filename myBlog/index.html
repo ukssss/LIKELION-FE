@@ -1,32 +1,149 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Blog</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Blog</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/00_reset.css" />
+    <link rel="stylesheet" href="./css/00_common.css" />
+    <link rel="stylesheet" href="./css/01_layout.css" />
+    <link rel="stylesheet" href="./css/02_header.css" />
+    <link rel="stylesheet" href="./css/04_visual.css" />
+    <link rel="stylesheet" href="./css/06_section.css" />
+    <link rel="stylesheet" href="./css/07_post.css" />
+  </head>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="./css/00_reset.css">
-  <link rel="stylesheet" href="./css/00_common.css">
-</head>
+  <body>
+    <div class="wrap">
+      <!-- header -->
+      <header>
+        <div class="max-width">
+          <!-- logo -->
+          <h1>
+            <a href="#">
+              <img src="./img/logo.svg" alt="My Blog" />
+            </a>
+          </h1>
+          <!-- //logo -->
+          <!-- search -->
+          <form class="search-form">
+            <label for="search" class="sr-only">검색</label>
+            <input type="text" id="search" placeholder="SEARCH" />
+            <button type="submit">
+              <img src="./img/icon-search.svg" alt="검색" />
+            </button>
+          </form>
+          <!-- //search -->
 
-<body>
-  <!--
+          <!-- profile button -->
+          <button class="profile-btn" type="button">
+            <img src="./img/profile.jpg" alt="프로필 보기" />
+          </button>
+          <!-- //profile button -->
+        </div>
+      </header>
+      <!-- //header -->
+
+      <main>
+        <div class="visual">
+          <h2>Skateboard</h2>
+          <img src="./img/main-visual.jpg" alt="" />
+        </div>
+
+        <section class="grid-section latest">
+          <div class="max-width">
+            <div class="title">
+              <h3>Latest Posts</h3>
+              <p>
+                돋고, 청춘의 봄날의 끓는 것이다. 피부가 위하여서 무한한 얼음
+                싹이 아니다. 두기 안고, 우리 인생에 뛰노는 별과 옷을 많이 하는
+                있으랴? 공자는 보는 열락의 피어나기 너의 이상의 위하여, 속에서
+                칼이다. 군영과 열락의 봄날의 밥을 피부가 말이다.
+              </p>
+            </div>
+            <ul class="post-list">
+              <li>
+                <article class="card">
+                  <a href="#">
+                    <div class="thumbnail">
+                      <img src="./img/post-img1.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                      <h4 class="post-title">
+                        스케이트보드 종류와 스케이보드 타는 법, 나에게 맞는
+                        스케이트보드는?
+                      </h4>
+                      <time class="post-date"> 2022.12.01</time>
+                      <p class="post-description">
+                        무엇인지 이네들은 까닭이요, 계절이 그리워 패, 어머님,
+                        라이너 겨울이 까닭입니다. 이런 나는 가난한 내린 언덕
+                        새워 있습니다. 걱정도 이름과 이 같이 까닭입니다. 불러
+                        헤일 가을로 버리었습니다. 내 하나에 소녀들의 까닭입니다.
+                      </p>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li>
+                <article class="card">
+                  <a href="#">
+                    <div class="thumbnail">
+                      <img src="./img/post-img5.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                      <h4 class="post-title">
+                        스케이트보드 종류와 스케이보드 타는 법, 나에게 맞는
+                        스케이트보드는?
+                      </h4>
+                      <time class="post-date"> 2022.12.01</time>
+                      <p class="post-description">
+                        무엇인지 이네들은 까닭이요, 계절이 그리워 패, 어머님,
+                        라이너 겨울이 까닭입니다. 이런 나는 가난한 내린 언덕
+                        새워 있습니다. 걱정도 이름과 이 같이 까닭입니다. 불러
+                        헤일 가을로 버리었습니다. 내 하나에 소녀들의 까닭입니다.
+                      </p>
+                    </div>
+                  </a>
+                </article>
+              </li>
+            </ul>
+            <a href="#" class="more">more</a>
+          </div>
+        </section>
+
+        <section class="grid-section video">
+          <div class="max-width">
+            <div class="title">
+              <h3>Video</h3>
+              <p>
+                뛰노는 가치를 그와 황금시대를 때문이다. 과실이 하여도 그들의
+                이는 만물은 이상의 들어 칼이다. 고동을 황금시대의 이것을 끝까지
+                인생에 약동하다. 보이는 힘차게 그들에게 유소년에게서 능히 작고
+                인도하겠다는 튼튼하며, 교향악이다.
+              </p>
+            </div>
+            <div class="post-list">post</div>
+            <a href="#" class="more">more</a>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="max-width">footer</div>
+      </footer>
+    </div>
+
+    <!--
   Best Post
   How to : KICKFLIP SKATEBOARD TRICK TIP
   READ
 
 
-  Lastest Posts
-  돋고, 청춘의 봄날의 끓는 것이다. 피부가 위하여서 무한한 얼음 싹이 아니다. 두기 안고, 우리 인생에 뛰노는 별과 옷을 많이 하는 있으랴? 공자는 보는 열락의 피어나기 너의 이상의 위하여,
-  속에서 칼이다. 군영과 열락의 봄날의 밥을 피부가 말이다.
 
-  스케이트보드 종류와 스케이보드 타는 법, 나에게 맞는 스케이트보드는?
-  2022.12.01
-  무엇인지 이네들은 까닭이요, 계절이 그리워 패, 어머님, 라이너 겨울이 까닭입니다. 이런 나는 가난한 내린 언덕 새워 있습니다. 걱정도 이름과 이 같이 까닭입니다. 불러 헤일 가을로 버리었습니다. 내 하나에
-  소녀들의 까닭입니다.
+
 
   초보 보더들을 위한 연령별 입문용 스케이트 보드 추천!
   2022.12.01
@@ -54,9 +171,7 @@
   아름답고 밝은 방황하여도, 이상은 칼이다. 그들은 생명을 두손을 위하여서 피고 약동하다.
 
 
-  Video
-  뛰노는 가치를 그와 황금시대를 때문이다. 과실이 하여도 그들의 이는 만물은 이상의 들어 칼이다. 고동을 황금시대의 이것을 끝까지 인생에 약동하다. 보이는 힘차게 그들에게 유소년에게서 능히
-  작고 인도하겠다는 튼튼하며, 교향악이다.
+
 
   스케이트보드 초보자가이드 : 스케이트보드가 처음이세요? 무조건 도움되는 입문 영상
 
@@ -64,6 +179,6 @@
 
   Copyright 2022. 이름 All rights reserved.
 -->
-</body>
-
+  </body>
 </html>
+index.html 8KB
