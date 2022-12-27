@@ -6,6 +6,7 @@
     "gsap": "^3.11.4"
   },
   "devDependencies": {
+    "eslint": "^8.30.0",
     "live-server": "^1.2.2"
   }
 }

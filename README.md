@@ -15,11 +15,11 @@
 
 - resume (2022.11.28)
 - webCafe (2022.11.29 - 2022.12.14)
-- webCafeRWD (2022.12.15 - )
+- webCafeRWD (2022.12.15 - 2022.12.21)
 
 **Javascript**
 
-- Not yet
+- CORE-JAVASCRIPT (2022.12.27 - )
 
 **React**
 
