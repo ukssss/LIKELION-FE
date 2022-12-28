@@ -2,13 +2,10 @@
 /* Variables                                                             */
 /* --------------------------------------------------------------------- */
 
-let admin;
-let name;
+let ourPlanetName = "earth";
+let currentUsername = "ukss";
 
-name = "John";
-admin = name;
-
-alert(admin);
+console.log(ourPlanetName, currentUsername);
 
 /* 다음 내용을 분석한 후, 프로그래밍 할 수 있도록 변수와 상수를 작성해봅니다. ----------- */
 
