@@ -1,5 +1,9 @@
 # 멋쟁이 사자처럼
 
-## 자바스크립트 학습 저장소
+> To study JavaScript Core
 
-[JavaScript Core 브랜치](https://www.naver.com)
+학습이 완료된 항목은 체크박스로 표시
+
+- [ ] Code Structure
+- [ ] Variables
+- [ ] Strict Mode
