@@ -45,9 +45,5 @@
       "bold": false,
       "italic": false
     }
-  ],
-  "editor.tokenColorCustomizations": {
-    "comments": "",
-    "textMateRules": []
-  }
+  ]
 }
