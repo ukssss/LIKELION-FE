@@ -2,21 +2,35 @@
 /* Variables                                                             */
 /* --------------------------------------------------------------------- */
 
-let ourPlanetName = "earth";
-let currentUsername = "ukss";
-
-console.log(ourPlanetName, currentUsername);
+const BIRTHDAY = "25.11.1998";
+let age = someCode(BIRTHDAY);
 
 /* 다음 내용을 분석한 후, 프로그래밍 할 수 있도록 변수와 상수를 작성해봅니다. ----------- */
 
 // - 갯수 별 상품 가격 계산하기
+const productPrice = 500;
+
 // - 구매 제품 가격의 총 합
+let totalPrice = 35000;
+
 // - 1년 기준 일(day)자 수
+const daysOfYear = 365;
+
 // - 구매 결제 여부
+let isPaid = true;
+
 // - 구매 결제 내역
+let payList = ["아이폰", "맥북", "사줘"];
+
 // - 브랜드 접두사
+const brandPrefix;
+
 // - 오늘의 운세
+let todayLucky;
+
 // - 상품 정보
+const productInfo = "이거최고";
+
 
 /* variables ----------------------------------------------------------- */
 
