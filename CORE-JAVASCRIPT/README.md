@@ -1,8 +1,8 @@
-# 멋쟁이 사자처럼
+# LikeLion JavaScript Part 🦁
 
-> To study JavaScript Core
+<p>학습이 완료된 항목은 <span style="color:blue; text-decoration:underline">체크박스</span>로 표시</p>
 
-학습이 완료된 항목은 체크박스로 표시
+<h3>JavaScript <span style="color:red;">Core</span></h3>
 
 - [x] Code Structure [바로가기](https://github.com/ukssss/LIKELION-FE/pull/2/commits/becca5fb39ac39f278656d18ffe57271b32f7d46)
 - [x] Variables 생성 및 변수 가지고 놀기 문제 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/2/commits/697e31f40d4cd5c449ec5d1212b21bfec6b73697)
