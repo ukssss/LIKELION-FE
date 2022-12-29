@@ -2,6 +2,11 @@
 /* Operators                                                              */
 /* ---------------------------------------------------------------------- */
 
+let firstValue = prompt("덧셈할 첫 번째 숫자를 입력해주세요. ", 1);
+let secondValue = prompt("덧셈할 두 번째 숫자를 입력해주세요. ", 2);
+
+console.log(Number(firstValue) + Number(secondValue));
+
 // 연산자(演算子): 연산을 표시하기 위한 기호
 // 피연산자(被演算子): 처리 대상
 
@@ -66,4 +71,4 @@ console.log(number); // ? 102
 // 그리고 연산자 우선 순위에 따라 연산 과정을 유추해보세요.
 
 let count = 10;
-let total = (count % 4) * (count /= 2) + count ** 3; // ?
+let total = (count % 4) * (count /= 2) + count ** 3; // ? 2 * 5 + 125 = 135
