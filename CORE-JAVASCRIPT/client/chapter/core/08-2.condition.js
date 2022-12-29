@@ -35,9 +35,9 @@ let whichTruthy = false || "" || [2, 3].length || { thisIsFalsy: true };
 // * 로그인 구현하기
 let username = prompt("이름내놔");
 
-if (username === "Admin") {
+if (username.localeCompare("Admin")) {
   let password = prompt("비번ㄱ");
-  if (password === "TheMaster") {
+  if (password.localeCompare("TheMaster")) {
     console.log("코드 좀 치네 ㅋㅋ");
   } else {
     console.log("맞겠냐? ㅋㅋ");
