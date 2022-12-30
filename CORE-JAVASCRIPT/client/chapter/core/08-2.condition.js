@@ -33,17 +33,19 @@ let whichFalsy = true && " " && [] && { thisIsFalsy: false };
 let whichTruthy = false || "" || [2, 3].length || { thisIsFalsy: true };
 
 // * 로그인 구현하기
-let username = prompt("이름내놔");
+let userName = prompt("사용자 아이디를 입력해주세요.", "");
 
-if (username.toUpperCase() === "Admin".toUpperCase()) {
-  let password = prompt("비번ㄱ");
-  if (password.toUpperCase() === "TheMaster".toUpperCase) {
-    console.log("코드 좀 치네 ㅋㅋ");
+// console.log(userName);
+if (userName?.toLowerCase() === "admin") {
+  let pw = prompt("비밀번호를 입력해 주세요.", "");
+
+  if (pw?.toLowerCase() === "themaster") {
+    console.log("환영합니다.");
   } else {
-    console.log("맞겠냐? ㅋㅋ");
+    console.log("취소되었습니다.");
   }
-} else if (username === "" || username === null) {
-  console.log("쫄?");
+} else if (userName?.replace(/\s*/g, "") === "" || userName === null) {
+  console.log("취소했습니다.");
 } else {
-  console.log("까불고 있네 ㅋㅋ");
+  console.log("인증되지 않은 사용자 입니다.");
 }
