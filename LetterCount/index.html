@@ -23,10 +23,11 @@
   <body class="container">
     <h1>자기소개</h1>
     <textarea class="form-control" rows="3" id="jasoseol">저는 인성 문제가 없습니다.</textarea>
+    <span id="count">(0/200)</span>
 
     <script>
       const jasoseol = document.getElementById("jasoseol").value;
-      console.log(jasoseol.length);
+      document.getElementById("count").innerHTML = `(${jasoseol.length}/200)`;
     </script>
   </body>
 </html>
