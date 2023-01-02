@@ -20,12 +20,9 @@
         }
       }
 
-      document.write("<div class='ball ball0'>" + lotto[0] + "</div>");
-      document.write("<div class='ball ball1'>" + lotto[1] + "</div>");
-      document.write("<div class='ball ball2'>" + lotto[2] + "</div>");
-      document.write("<div class='ball ball3'>" + lotto[3] + "</div>");
-      document.write("<div class='ball ball4'>" + lotto[4] + "</div>");
-      document.write("<div class='ball ball5'>" + lotto[5] + "</div>");
+      for (let i = 0; i < lotto.length; i++) {
+        document.write(`<div class='ball ball${i}'>${lotto[i]}</div>`);
+      }
     </script>
   </body>
 </html>
