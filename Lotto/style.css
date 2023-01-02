@@ -1,0 +1,30 @@
+.ball {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  line-height: 60px;
+  float: left;
+  margin-right: 5px;
+}
+
+.ball0 {
+  background-color: crimson;
+}
+.ball1 {
+  background-color: rgb(220, 207, 20);
+}
+.ball2 {
+  background-color: rgb(113, 220, 20);
+}
+.ball3 {
+  background-color: rgb(20, 47, 220);
+}
+.ball4 {
+  background-color: rgb(90, 20, 220);
+}
+.ball5 {
+  background-color: rgb(21, 6, 14);
+}
