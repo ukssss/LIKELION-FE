@@ -14,6 +14,12 @@ const q = {
   12: { title: "문제 12번", type: "JP", A: "J", B: "P" },
 };
 
+const result = {
+  ISTJ: { animal: "하마", explain: "하마 설명", img: "tiger.jpg" },
+  ENFP: { animal: "사자", explain: "사자 설명", img: "tiger.jpg" },
+  ENTJ: { animal: "호랑이", explain: "호랑이 설명", img: "tiger.jpg" },
+};
+
 function start() {
   $(".start").hide();
   $(".question").show();
@@ -42,6 +48,9 @@ function next() {
     mbti += $("#TF").val() < 2 ? "F" : "T";
     mbti += $("#JP").val() < 2 ? "P" : "J";
     alert(mbti);
+    $("#img").attr("src", result[mbti]["img"]);
+    $("#animal").html(result[mbti]["animal"]);
+    $("#explain").html(result[mbti]["explain"]);
   } else {
     $(".progress-bar").attr("style", `width: calc(100 / 12 * ${num}%)`);
     $("#title").html(q[num]["title"]);
