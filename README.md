@@ -20,6 +20,7 @@
 **Javascript**
 
 - CORE-JAVASCRIPT (2022.12.27 - )
+- Lotto (2023.01.02)
 
 **React**
 
