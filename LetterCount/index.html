@@ -26,8 +26,11 @@
     <span id="count">(0/200)</span>
 
     <script>
-      const jasoseol = document.getElementById("jasoseol").value;
-      document.getElementById("count").innerHTML = `(${jasoseol.length}/200)`;
+      function counter() {
+        const jasoseol = document.getElementById("jasoseol").value;
+        document.getElementById("count").innerHTML = `(${jasoseol.length}/200)`;
+      }
+      counter();
     </script>
   </body>
 </html>
