@@ -36,11 +36,18 @@ function next() {
   if (num === 13) {
     $(".question").hide();
     $(".result").show();
+    let mbti = "";
+    mbti += $("#EI").val() < 2 ? "I" : "E";
+    mbti += $("#SN").val() < 2 ? "N" : "S";
+    mbti += $("#TF").val() < 2 ? "F" : "T";
+    mbti += $("#JP").val() < 2 ? "P" : "J";
+    alert(mbti);
+  } else {
+    $(".progress-bar").attr("style", `width: calc(100 / 12 * ${num}%)`);
+    $("#title").html(q[num]["title"]);
+    $("#type").val(q[num]["type"]);
+    $("#A").html(q[num]["A"]);
+    $("#B").html(q[num]["B"]);
+    num++;
   }
-  $(".progress-bar").attr("style", `width: calc(100 / 12 * ${num}%)`);
-  $("#title").html(q[num]["title"]);
-  $("#type").val(q[num]["type"]);
-  $("#A").html(q[num]["A"]);
-  $("#B").html(q[num]["B"]);
-  num++;
 }
