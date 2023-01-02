@@ -8,6 +8,17 @@
   </head>
   <body>
     <h2>로또 숫자 생성기</h2>
-    <script></script>
+    <script>
+      let lotto = [];
+
+      lotto.push(parseInt(Math.random() * 45 + 1));
+      lotto.push(parseInt(Math.random() * 45 + 1));
+      lotto.push(parseInt(Math.random() * 45 + 1));
+      lotto.push(parseInt(Math.random() * 45 + 1));
+      lotto.push(parseInt(Math.random() * 45 + 1));
+      lotto.push(parseInt(Math.random() * 45 + 1));
+
+      document.write(lotto);
+    </script>
   </body>
 </html>
