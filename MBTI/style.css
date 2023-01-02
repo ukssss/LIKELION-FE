@@ -1,0 +1,8 @@
+article {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+/* .question {
+  display: none;
+} */
