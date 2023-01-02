@@ -39,7 +39,7 @@
     </style>
   </head>
   <body>
-    <h1 id="hp">HP: 3</h1>
+    <h1 id="hp">HP : 10</h1>
     <div class="background">
       <img id="drone" src="drone.png" alt="drone" />
       <img id="spit" src="spit.png" alt="spit" />
@@ -47,13 +47,13 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script>
-      let hp = 3;
+      let hp = 10;
       $("#drone").click(function () {
         $("#spit").fadeIn("fast");
         $("#spit").animate({ left: "+=250" });
         $("#spit").fadeOut("fast", function () {
-          hp = hp - 1;
-          $("#hp").text(`HP: ${hp}`);
+          hp -= 1;
+          $("#hp").text(`HP : ${hp}`);
           if (hp === 0) {
             $("#bunker").fadeOut();
           }
