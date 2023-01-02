@@ -5,15 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StarCraft</title>
+    <style>
+      .background {
+        position: relative;
+        background-image: url("background.png");
+        background-size: 500px 330px;
+        width: 500px;
+        height: 330px;
+      }
+      #drone {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 100px;
+        left: 60px;
+      }
+      #bunker {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        top: 80px;
+        right: 20px;
+      }
+      #spit {
+        display: none;
+        position: absolute;
+        top: 140px;
+        left: 150px;
+        width: 50px;
+        height: 30px;
+        z-index: 2;
+      }
+    </style>
   </head>
   <body>
-    <h1>jQuery 기초</h1>
-    <button id="click">클릭</button>
-
+    <div class="background">
+      <img id="drone" src="drone.png" alt="drone" />
+      <img id="spit" src="spit.png" alt="spit" />
+      <img id="bunker" src="bunker.png" alt="bunker" />
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script>
-      $("#click").click(function () {
-        console.log("hello");
+      $("#drone").click(function () {
+        console.log("wow");
       });
     </script>
   </body>
