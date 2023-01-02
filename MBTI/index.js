@@ -24,6 +24,7 @@ $("#B").click(function () {
 });
 
 function next() {
+  $(".progress-bar").attr("style", `width: calc(100 / 12 * ${num}%)`);
   $("#title").html(q[num]["title"]);
   $("#type").val(q[num]["type"]);
   $("#A").html(q[num]["A"]);

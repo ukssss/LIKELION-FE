@@ -3,6 +3,6 @@ article {
   flex-flow: column nowrap;
 }
 
-/* .question {
+.question {
   display: none;
-} */
+}
