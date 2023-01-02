@@ -23,6 +23,7 @@
 - Lotto (2023.01.02)
 - LetterCount (2023.01.02)
 - StarCraft (2023.01.02)
+- AnniversaryCount (2023.01.02)
 
 **React**
 
