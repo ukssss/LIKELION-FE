@@ -54,6 +54,9 @@
         $("#spit").fadeOut("fast", function () {
           hp = hp - 1;
           $("#hp").text(`HP: ${hp}`);
+          if (hp === 0) {
+            $("#bunker").fadeOut();
+          }
         });
         $("#spit").css({ left: "150px" });
       });
