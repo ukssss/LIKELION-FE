@@ -20,6 +20,8 @@
         }
       }
 
+      lotto.sort((a, b) => a - b);
+
       for (let i = 0; i < lotto.length; i++) {
         document.write(`<div class='ball ball${i}'>${lotto[i]}</div>`);
       }
