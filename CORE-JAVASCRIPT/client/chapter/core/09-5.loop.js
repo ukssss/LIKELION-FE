@@ -59,12 +59,12 @@ const languages = [
 // }
 
 // TODO 특정 조건에서 중단하기
-for (let value of languages) {
-  let name = value.name;
-  if (name.includes("C#")) break;
+// for (let value of languages) {
+//   let name = value.name;
+//   if (name.includes("C#")) break;
 
-  console.table(value);
-}
+//   console.table(value);
+// }
 
 const randomUser = {
   gender: "female",
@@ -101,7 +101,43 @@ const randomUser = {
   nat: "GB",
 };
 
-// 객체의 키, 값 순환
-// - for ~ in 문
-// - for ~ of 문
-// - 성능 비교 진단
+// TODO 객체의 키, 값 순환
+// * for ~ in 문
+// * for ~ of 문
+// * 성능 비교 진단
+
+// for (let key in randomUser) {
+//   let L1 = randomUser[key];
+
+//   if ({}.hasOwnProperty.call(randomUser, key)) {
+//     console.log(`L1 : `, key);
+
+//     if (typeof L1 === "object") {
+//       let L2 = L1[key];
+//       if ({}.hasOwnProperty.call(randomUser, key)) {
+//         console.log(`\t L2 : `, key);
+
+//         if (typeof L2 === "object") {
+//         }
+//       }
+//     }
+//   }
+// }
+
+// console.log(Object.entries(randomUser));
+
+for (let keyValue of Object.entries(randomUser)) {
+  let key = keyValue[0];
+  let value = keyValue[1];
+
+  console.log(`L1 : `, key);
+
+  if (typeof value === "object") {
+    for (let keyValue of Object.entries(value)) {
+      let key = keyValue[0];
+      let value = keyValue[1];
+
+      console.log(`L2 : `, key);
+    }
+  }
+}
