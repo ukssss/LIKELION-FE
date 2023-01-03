@@ -1,0 +1,2 @@
+normalFunction();
+// arrowFunction();
