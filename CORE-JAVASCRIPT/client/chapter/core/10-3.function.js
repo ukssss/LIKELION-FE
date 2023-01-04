@@ -113,6 +113,27 @@ let pow2 = (num, sqr = 0) => {
 
 pow2(3, 54);
 
+// * 범쌤 풀이 1
+let pow3 = (numeric, powerCount) => {
+  let result = 1;
+  for (let i = 0; i < powerCount; i++) {
+    result *= numeric;
+  }
+
+  return result;
+};
+
+pow3(2, 53);
+
+// * 범썜 풀이 2
+let pow4 = (numeric, powerCount) => {
+  Array(powerCount)
+    .fill(null)
+    .reduce((acc) => acc * numeric, 1);
+};
+
+pow4(2, 53);
+
 // TODO) repeat(text: string, repeatCount: number): string;
 // * 1.
 let repeat = function (str, time = 1) {
@@ -135,3 +156,20 @@ let repeat2 = (str, time = 1) => {
 };
 
 repeat2("Hello", 4);
+
+// * 범쌤 풀이 1
+let repeat3 = (text, repeatCount) => {
+  let result = "";
+  for (let i = 0; i < repeatCount; i++) {
+    result += text;
+  }
+  return result;
+};
+
+repeat3("Hello", 3);
+
+// * 범쌤 풀이 2
+let repeat4 = (text, repeatCount) =>
+  Array(repeatCount)
+    .fill(null)
+    .reduce((acc) => acc + text, "");
