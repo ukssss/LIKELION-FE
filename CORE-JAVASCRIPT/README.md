@@ -51,3 +51,10 @@
 - [x] Function (1) 함수 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/5/commits/5e705052398f149250afb6f175c90fd84d15fddf)
 - [x] Function (2) 함수 표현식 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/5/commits/4d2cdd81c31ce3b3322eb47ec3f12a7f07448a4c)
 - [x] Function (3) Arrow Function [바로가기](https://github.com/ukssss/LIKELION-FE/pull/5/commits/bdfcfb8422f33cc93faf91ec16945e0fe3a11c95)
+- [x] Function (3) 과제 풀이 추가 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/6/commits/36196688073e5d068e994fa20e10a1bdde673bb7)
+- [x] Function (4) 재귀와 스택 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/6/commits/f3302ca90374b7f6bdbf0b8d70c966a49e457ad3)
+
+---
+
+- [x] Object (1) 객체 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/6/commits/54c3e072bf2105ebfce7a0f6aba03947b7b32b35)
+- [x] Object (2) 재귀와 스택 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/6/commits/ed201c14d2563f23259467a2f643e3b91656269a)
