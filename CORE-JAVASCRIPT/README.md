@@ -58,3 +58,14 @@
 
 - [x] Object (1) 객체 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/6/commits/54c3e072bf2105ebfce7a0f6aba03947b7b32b35)
 - [x] Object (2) 재귀와 스택 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/6/commits/ed201c14d2563f23259467a2f643e3b91656269a)
+- [x] Object (3) 가비지 컬렉션 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/7/commits/7952d2d38dc170c2caf1c40611df749e9f27193f)
+- [x] Object (4) 메서드와 this 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/7/commits/14757eca78b8d0cc19d509740d98c7adcdec0f7b)
+
+---
+
+- [x] Closure 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/7/commits/5fcbea750d2cfe65a144b6b4c57fe1df530e5f8d)
+- [x] OptionalChaining 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/7/commits/e3363baa83f86f41666237a2aa767c19bee15b40)
+- [x] Object Wrapper 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/7/commits/ea7c461aa1bf6a4e70611cc6dbd3a99c3867c19e)
+- [x] Number Type 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/7/commits/b00a141cb83f011e3e6c8a52e4ac1438f5ea9f03)
+- [x] String Type 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/7/commits/196c7dba73df913281b80d7e8e31faae281585f0)
+- [x] Array Type 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/7/commits/4944abb79da275c2e3b4f5e99021b7942bd66eea)
