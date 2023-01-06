@@ -69,3 +69,5 @@
 - [x] Number Type 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/7/commits/b00a141cb83f011e3e6c8a52e4ac1438f5ea9f03)
 - [x] String Type 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/7/commits/196c7dba73df913281b80d7e8e31faae281585f0)
 - [x] Array Type 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/7/commits/4944abb79da275c2e3b4f5e99021b7942bd66eea)
+- [x] Array Method 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/8/commits/76142a96c389a473fb707a45cfd54a3947b4c57b)
+- [x] Try Catch 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/8/commits/53d6aebd0b1e8e4ebd16ecbf4ba7be7743870689)
