@@ -27,7 +27,7 @@
 // - closest
 
 // let first = document.querySelector(".first"); // ? <span class="first">hello</span>
-let [first, second] = document.querySelectorAll("span"); // ? NodeList(2) [span.first, span.second]
+// let [first, second] = document.querySelectorAll("span"); // ? NodeList(2) [span.first, span.second]
 
 // console.log(second);
 

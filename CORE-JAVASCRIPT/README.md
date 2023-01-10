@@ -38,42 +38,45 @@
 
 ---
 
-- [x] Loop (1) while 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/4/commits/d22ba7ed025c22235def1cba45a457b42d6141d5)
-- [x] Loop (2) do-while 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/4/commits/d964bfd895e00013f0a3cc4a92812c3d994ee161)
-- [x] Loop (3) for 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/4/commits/ed2dacc055f31cc1bfd554fc0f0d7df5fc2207dd)
-- [x] Loop (4) for ~ in 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/tree/01.core)
-- [x] Loop (4) for ~ in 실습 (2) [바로가기](https://github.com/ukssss/LIKELION-FE/pull/4/commits/02f71c5d4df28aaf9c5044fe0e68c30bb89295f5)
-- [x] Loop (5) for ~ of 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/4/commits/faa950bdfda41909275ecdae9390c666a0737cef)
-- [x] Loop (5) for ~ of 문 객체 추출 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/5/commits/16f4801a57c58e496030268a2297ce478d0e91cc)
+- [x] Loop (1) while [바로가기](https://github.com/ukssss/LIKELION-FE/pull/4/commits/d22ba7ed025c22235def1cba45a457b42d6141d5)
+- [x] Loop (2) do-while [바로가기](https://github.com/ukssss/LIKELION-FE/pull/4/commits/d964bfd895e00013f0a3cc4a92812c3d994ee161)
+- [x] Loop (3) for [바로가기](https://github.com/ukssss/LIKELION-FE/pull/4/commits/ed2dacc055f31cc1bfd554fc0f0d7df5fc2207dd)
+- [x] Loop (4) for ~ in [바로가기](https://github.com/ukssss/LIKELION-FE/tree/01.core)
+- [x] Loop (4) for ~ in (2) [바로가기](https://github.com/ukssss/LIKELION-FE/pull/4/commits/02f71c5d4df28aaf9c5044fe0e68c30bb89295f5)
+- [x] Loop (5) for ~ of [바로가기](https://github.com/ukssss/LIKELION-FE/pull/4/commits/faa950bdfda41909275ecdae9390c666a0737cef)
+- [x] Loop (5) for ~ of 문 객체 추출 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/5/commits/16f4801a57c58e496030268a2297ce478d0e91cc)
 
 ---
 
-- [x] Function (1) 함수 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/5/commits/5e705052398f149250afb6f175c90fd84d15fddf)
-- [x] Function (2) 함수 표현식 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/5/commits/4d2cdd81c31ce3b3322eb47ec3f12a7f07448a4c)
+- [x] Function (1) 함수 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/5/commits/5e705052398f149250afb6f175c90fd84d15fddf)
+- [x] Function (2) 함수 표현식 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/5/commits/4d2cdd81c31ce3b3322eb47ec3f12a7f07448a4c)
 - [x] Function (3) Arrow Function [바로가기](https://github.com/ukssss/LIKELION-FE/pull/5/commits/bdfcfb8422f33cc93faf91ec16945e0fe3a11c95)
 - [x] Function (3) 과제 풀이 추가 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/6/commits/36196688073e5d068e994fa20e10a1bdde673bb7)
 - [x] Function (4) 재귀와 스택 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/6/commits/f3302ca90374b7f6bdbf0b8d70c966a49e457ad3)
 
 ---
 
-- [x] Object (1) 객체 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/6/commits/54c3e072bf2105ebfce7a0f6aba03947b7b32b35)
-- [x] Object (2) 재귀와 스택 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/6/commits/ed201c14d2563f23259467a2f643e3b91656269a)
-- [x] Object (3) 가비지 컬렉션 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/7/commits/7952d2d38dc170c2caf1c40611df749e9f27193f)
-- [x] Object (4) 메서드와 this 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/7/commits/14757eca78b8d0cc19d509740d98c7adcdec0f7b)
+- [x] Object (1) 객체 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/6/commits/54c3e072bf2105ebfce7a0f6aba03947b7b32b35)
+- [x] Object (2) 재귀와 스택 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/6/commits/ed201c14d2563f23259467a2f643e3b91656269a)
+- [x] Object (3) 가비지 컬렉션 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/7/commits/7952d2d38dc170c2caf1c40611df749e9f27193f)
+- [x] Object (4) 메서드와 this [바로가기](https://github.com/ukssss/LIKELION-FE/pull/7/commits/14757eca78b8d0cc19d509740d98c7adcdec0f7b)
 
 ---
 
-- [x] Closure 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/7/commits/5fcbea750d2cfe65a144b6b4c57fe1df530e5f8d)
-- [x] OptionalChaining 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/7/commits/e3363baa83f86f41666237a2aa767c19bee15b40)
-- [x] Object Wrapper 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/7/commits/ea7c461aa1bf6a4e70611cc6dbd3a99c3867c19e)
-- [x] Number Type 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/7/commits/b00a141cb83f011e3e6c8a52e4ac1438f5ea9f03)
-- [x] String Type 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/7/commits/196c7dba73df913281b80d7e8e31faae281585f0)
-- [x] Array Type 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/7/commits/4944abb79da275c2e3b4f5e99021b7942bd66eea)
-- [x] Array Method 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/8/commits/76142a96c389a473fb707a45cfd54a3947b4c57b)
-- [x] Try Catch 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/8/commits/53d6aebd0b1e8e4ebd16ecbf4ba7be7743870689)
+- [x] Closure [바로가기](https://github.com/ukssss/LIKELION-FE/pull/7/commits/5fcbea750d2cfe65a144b6b4c57fe1df530e5f8d)
+- [x] OptionalChaining [바로가기](https://github.com/ukssss/LIKELION-FE/pull/7/commits/e3363baa83f86f41666237a2aa767c19bee15b40)
+- [x] Object Wrapper [바로가기](https://github.com/ukssss/LIKELION-FE/pull/7/commits/ea7c461aa1bf6a4e70611cc6dbd3a99c3867c19e)
+- [x] Number Type [바로가기](https://github.com/ukssss/LIKELION-FE/pull/7/commits/b00a141cb83f011e3e6c8a52e4ac1438f5ea9f03)
+- [x] String Type [바로가기](https://github.com/ukssss/LIKELION-FE/pull/7/commits/196c7dba73df913281b80d7e8e31faae281585f0)
+- [x] Array Type [바로가기](https://github.com/ukssss/LIKELION-FE/pull/7/commits/4944abb79da275c2e3b4f5e99021b7942bd66eea)
+- [x] Array Method [바로가기](https://github.com/ukssss/LIKELION-FE/pull/8/commits/76142a96c389a473fb707a45cfd54a3947b4c57b)
+- [x] Try Catch [바로가기](https://github.com/ukssss/LIKELION-FE/pull/8/commits/53d6aebd0b1e8e4ebd16ecbf4ba7be7743870689)
 
 ---
 
 ## 웹 API - <span style="color:red;">DOM, Events</span>
 
-- [x] Traversal 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/10/commits/1ecdf077c86942d98ea0fe08d326815d6bcd0438)
+- [x] Traversal [바로가기](https://github.com/ukssss/LIKELION-FE/pull/10/commits/1ecdf077c86942d98ea0fe08d326815d6bcd0438)
+- [x] DOM Node Class [바로가기](https://github.com/ukssss/LIKELION-FE/pull/11/commits/d85b7328ca69e9249ae81a3093dded622e6084d8)
+- [x] DOM Properties [바로가기](https://github.com/ukssss/LIKELION-FE/pull/11/commits/85c8b80afb04cfbb18932754b115d83e58f8c4e2)
+- [x] DOM Manipulation [바로가기](https://github.com/ukssss/LIKELION-FE/pull/11/commits/a1ff9a08144adaf9605e641f934baca21cd7b44b)
