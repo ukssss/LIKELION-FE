@@ -80,3 +80,9 @@
 - [x] DOM Node Class [바로가기](https://github.com/ukssss/LIKELION-FE/pull/11/commits/d85b7328ca69e9249ae81a3093dded622e6084d8)
 - [x] DOM Properties [바로가기](https://github.com/ukssss/LIKELION-FE/pull/11/commits/85c8b80afb04cfbb18932754b115d83e58f8c4e2)
 - [x] DOM Manipulation [바로가기](https://github.com/ukssss/LIKELION-FE/pull/11/commits/a1ff9a08144adaf9605e641f934baca21cd7b44b)
+- [x] DOM Styling [바로가기](https://github.com/ukssss/LIKELION-FE/pull/12/commits/fc36c75f168095f828bffe3674754f753c1bb37f)
+
+---
+
+- [x] Event Handling [바로가기](https://github.com/ukssss/LIKELION-FE/pull/12/commits/424b8a6e574329bd5bc3b143d610f6e3c6089b8e)
+- [x] Event Bubbling [바로가기](https://github.com/ukssss/LIKELION-FE/pull/12/commits/403f0d8da4b84d39b755874d496f4bd6d10bcf3e)
