@@ -26,16 +26,26 @@ function clearContents(node) {
   node.textContent = "";
 }
 
-function handler(e) {
-  e.preventDefault();
-
+function addCal() {
   let firstValue = +getInputValue(firstInput);
   let secondValue = +getInputValue(secondInput);
   let total = sum(firstValue, secondValue);
-  console.log(total);
 
   clearContents(result);
   insertLast(result, total);
 }
 
+function handler(e) {
+  e.preventDefault();
+
+  addCal();
+}
+
+function inputHandler() {
+  addCal();
+}
+
 done.addEventListener("click", handler);
+
+firstInput.addEventListener("change", inputHandler);
+secondInput.addEventListener("change", inputHandler);
