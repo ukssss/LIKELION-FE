@@ -4,29 +4,12 @@
 // TODO 4. 두 수의 합을 더해주기
 // TODO 5. 화면에 출력하기
 
-import { getNode, css, addClass, removeClass, refError, typeError, insertLast } from "./lib/index.js";
+import { getNode, sum, getInputValue, clearContents, insertLast } from "./lib/index.js";
 
 const firstInput = getNode("#firstNumber");
 const secondInput = getNode("#secondNumber");
 const done = getNode("#done");
 const result = getNode(".result");
-
-function getInputValue(node) {
-  if (typeof node === "string") node = getNode(node);
-  if (node.tagName !== "INPUT") refError("getInputValue 함수는 INPUT ELEMENT만 허용합니다");
-  return node.value;
-}
-
-const sum = (valueA, valueB) => valueA + valueB;
-
-// function sum(valueA, valueB) {
-//   return valueA + valueB;
-// }
-
-function clearContents(node) {
-  if (typeof node === "string") node = getNode(node);
-  node.textContent = "";
-}
 
 function addCal() {
   let firstValue = +getInputValue(firstInput);
