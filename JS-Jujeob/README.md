@@ -1,26 +1,21 @@
+# 주접 생성기
 
+> 2023.01.13(금) 에 진행했던 주접 생성기 제작 실습이다.
 
+### Skill
 
-# 멋쟁이 사자처럼
-## 자바스크립트 학습 저장소
+<span>
+<img src="https://img.shields.io/badge/-HTML-%23E34F26?style=for-the-badge&logo=HTML5&logoColor=white">
+<img src="https://img.shields.io/badge/-CSS-%231572B6?style=for-the-badge&logo=CSS3&logoColor=white">
+<img src="https://img.shields.io/badge/-JavaScript-%23F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white">
+</span>
 
-학습 주제별로 브랜치를 나눠 수업을 진행합니다.
+### Process
 
-해당 학습 자료는 해당 브랜치로 이동 후 확인 가능합니다.
-
-
-
-
-[JavaScript Core 브랜치](https://www.naver.com)
-
-
-
-
-
-
-
-
-
-
-
-
+- [x] Jujeob 실습 환경 구성 [바로가기]()
+- [x] Jujeob html, data 추가 [바로가기]()
+- [x] Jujeob 주접 생성기 제작 및 랜덤함수 제작 [바로가기]()
+- [x] Jujeob style 추가 [바로가기]()
+- [x] Jujeob 공백이 입력된 경우 발생하는 이벤트 설정 [바로가기]()
+- [x] Jujeob 숫자형 문자열을 검사하는 typeOf 함수 생성 [바로가기]()
+- [x] showAlert 함수를 통해 오류 메시지 출력 [바로가기]()
