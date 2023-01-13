@@ -4,6 +4,8 @@
 // TODO 4. 두 수의 합을 더해주기
 // TODO 5. 화면에 출력하기
 
+import { getNode, css, addClass, removeClass, refError, typeError, insertLast } from "./lib/index.js";
+
 const firstInput = getNode("#firstNumber");
 const secondInput = getNode("#secondNumber");
 const done = getNode("#done");

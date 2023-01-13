@@ -1,10 +1,10 @@
-function addClass(node, className) {
+export function addClass(node, className) {
   if (typeof node === "string") node = getNode(node);
   if (typeof className !== "string") typeError("addClass 함수의 두 번째 인자는 문자 타입이어야 합니다");
 
   node.classList.add(className);
 }
-function removeClass(node, className) {
+export function removeClass(node, className) {
   if (typeof node === "string") node = getNode(node);
 
   if (!className) {
@@ -17,7 +17,7 @@ function removeClass(node, className) {
   node.classList.remove(className);
 }
 
-function toggleClass(node, className) {
+export function toggleClass(node, className) {
   if (typeof node === "string") node = getNode(node);
   if (typeof className !== "string") typeError("toggleClass 함수의 두 번째 인자는 문자 타입이어야 합니다");
 
@@ -44,4 +44,4 @@ function setCss(node, prop, value) {
   node.style[prop] = value;
 }
 
-const css = (node, prop, value) => (!value ? getCss(node, prop) : setCss(node, prop, value));
+export const css = (node, prop, value) => (!value ? getCss(node, prop) : setCss(node, prop, value));
