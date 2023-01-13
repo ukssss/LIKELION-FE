@@ -1,12 +1,8 @@
 import { jujeobData } from "./data/data.js";
-import { clearContents, getInputValue, getNode, getRandom, insertLast } from "./lib/index.js";
-
-let a = 1;
+import { clearContents, getInputValue, getNode, getRandom, insertLast, isNumericString } from "./lib/index.js";
 
 const submit = getNode("#submit");
 const resultArea = getNode(".result");
-
-console.log(submit);
 
 function clickSubmitHandler(e) {
   e.preventDefault();
@@ -14,6 +10,11 @@ function clickSubmitHandler(e) {
 
   if (!name) {
     alert("이름을 입력해주세요");
+    return;
+  }
+
+  if (isNumericString(name)) {
+    alert("제대로된 이름을 입력해주세요");
     return;
   }
 
