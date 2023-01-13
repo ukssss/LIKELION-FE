@@ -7,6 +7,7 @@
 const firstInput = getNode("#firstNumber");
 const secondInput = getNode("#secondNumber");
 const done = getNode("#done");
+const result = getNode(".result");
 
 function getInputValue(node) {
   if (typeof node === "string") node = getNode(node);
@@ -20,6 +21,11 @@ const sum = (valueA, valueB) => valueA + valueB;
 //   return valueA + valueB;
 // }
 
+function clearContents(node) {
+  if (typeof node === "string") node = getNode(node);
+  node.textContent = "";
+}
+
 function handler(e) {
   e.preventDefault();
 
@@ -27,6 +33,9 @@ function handler(e) {
   let secondValue = +getInputValue(secondInput);
   let total = sum(firstValue, secondValue);
   console.log(total);
+
+  clearContents(result);
+  insertLast(result, total);
 }
 
 done.addEventListener("click", handler);
