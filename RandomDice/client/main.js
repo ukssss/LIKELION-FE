@@ -1,4 +1,4 @@
-import { diceAnimation, getNode, getNodes } from "./lib/index.js";
+import { diceAnimation, disableElement, enableElement, getNode, getNodes } from "./lib/index.js";
 
 // [주사위 굴리기]
 // 1. dice 애니메이션 불러오기 ✅
@@ -28,12 +28,12 @@ const handlerRollingDice = (() => {
   return () => {
     if (!isRolling) {
       stopAnimation = setInterval(diceAnimation, 1000);
-      recordButton.disabled = true;
-      console.log("애니메이션 시작");
+      disableElement(recordButton);
+      disableElement(resetButton);
     } else {
       clearInterval(stopAnimation);
-      recordButton.disabled = false;
-      console.log("애니메이션 중지");
+      enableElement(recordButton);
+      enableElement(resetButton);
     }
 
     isRolling = !isRolling;
