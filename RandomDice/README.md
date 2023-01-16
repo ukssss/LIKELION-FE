@@ -1,6 +1,6 @@
-# 주접 생성기
+# Random Dice
 
-> 2023.01.13(금) 에 진행했던 주접 생성기 제작 실습이다.
+> 2023.01.16(월) 에 진행했던 Random Dice 제작 실습이다.
 
 ### Skill
 
@@ -12,10 +12,11 @@
 
 ### Process
 
-- [x] Jujeob 실습 환경 구성 [바로가기]()
-- [x] Jujeob html, data 추가 [바로가기]()
-- [x] Jujeob 주접 생성기 제작 및 랜덤함수 제작 [바로가기]()
-- [x] Jujeob style 추가 [바로가기]()
-- [x] Jujeob 공백이 입력된 경우 발생하는 이벤트 설정 [바로가기]()
-- [x] Jujeob 숫자형 문자열을 검사하는 typeOf 함수 생성 [바로가기]()
-- [x] showAlert 함수를 통해 오류 메시지 출력 [바로가기]()
+- [x] RandomDice 실습 환경 구축 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/19/commits/e5780327217dc3a63b302574e1639829aff9b57f)
+- [x] RandomDice 주사위 굴리기 애니메이션 구현 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/19/commits/54fdd0ac040210ad53dc62a1038253e8ccd51fe6)
+- [x] RandomDice 버튼 구조 분해 할당 사용 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/19/commits/a56e45128e0c02d2716f58d7e3015d16cac1abbf)
+- [x] RandomDice controlElement.js 제작 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/19/commits/b2c8b3dc39dbe33489a57912a50b02056d9ba1a6)
+- [x] RandomDice record, reset 버튼 구현 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/19/commits/858ce94f84e0ac25ddfe701175d6f961d8d9f02c)
+- [x] typeOf, getNode 업그레이드 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/19/commits/5ac4cf43e0b5d5970e747c4195da328558367860)
+- [x] RandomDice 레코드 템플릿 뿌리기 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/19/commits/f7abd430d5ec1bd7064bf646d5950f901d49eb8f)
+- [x] RandomDice 메모이제이션 패턴 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/19/commits/66086bee2bebf43b14c52dec47e1add4080cc36e)
