@@ -1,3 +1,5 @@
+/* global gsap */
+
 import { jujeobData } from "./data/data.js";
 import { clearContents, getInputValue, getNode, getRandom, insertLast, isNumericString, showAlert, copy, addClass, removeClass } from "./lib/index.js";
 
@@ -11,10 +13,14 @@ function clickSubmitHandler(e) {
   if (!name) {
     showAlert(".alert", "이름을 입력해주세요", 2000);
     addClass(resultArea, "shake");
-    setTimeout(() => {
-      removeClass(resultArea, "shake");
-    }, 1000);
-    return;
+
+    // GSAP
+    gsap.fromTo(resultArea, 0.01, { x: -5 }, { x: 5, clearProps: "x", repeat: 20 });
+
+    // setTimeout(() => {
+    //   removeClass(resultArea, "shake");
+    // }, 1000);
+    // return;
   }
 
   if (isNumericString(name)) {
