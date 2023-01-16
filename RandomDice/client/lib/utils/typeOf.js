@@ -17,4 +17,4 @@ export const isFunction = (data) => typeOf(data) === "function";
 export const isUndefined = (data) => typeOf(data) === "undefined";
 export const isNull = (data) => typeOf(data) === "null";
 export const isSymbol = (data) => typeOf(data) === "symbol";
-export const isElement = (data) => typeOf(data) === document.ELEMENT_NODE;
+export const isElement = (node) => node.nodeType === document.ELEMENT_NODE;

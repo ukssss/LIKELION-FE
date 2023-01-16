@@ -1,7 +1,18 @@
-import { diceAnimation, disableElement, enableElement, getNode, getNodes, invisibleElement, visibleElement } from "./lib/index.js";
+import {
+  diceAnimation,
+  disableElement,
+  enableElement,
+  getNode,
+  getNodes,
+  insertLast,
+  invisibleElement,
+  visibleElement,
+  attr,
+  clearContents,
+} from "./lib/index.js";
 
 // [주사위 굴리기]
-// 1. dice 애니메이션 불러오기 ✅
+// 1. dice 애니메이션 불러오기
 // 2. bindEvent 유틸 함수 만들기
 // 3. handleRollingDice 함수 만들고 토글로 애니메이션 제작
 // 4. 변수 보호를 위한 클로저 + IIFE 사용하기
@@ -13,21 +24,49 @@ import { diceAnimation, disableElement, enableElement, getNode, getNodes, invisi
 // 4. visible 활성 유틸 함수 만들기
 // 5. toggleState 유틸 함수 만들기
 
+// [ 레코드 템플릿 뿌리기 ]
+// 1. renderRecordListItem 함수 만들기
+// 2. HTML 템플릿 만들기
+// 3. 템플릿 뿌리기
+
 // 배열의 구조 분해 할당
 const [rollingDiceButton, recordButton, resetButton] = getNodes(".buttonGroup > button");
 const recordListWrapper = getNode(".recordListWrapper");
 
-// IIFE
+let count = 0;
+let total = 0;
+
+function renderRecordListItem() {
+  let diceValue = Number(attr("#cube", "data-dice"));
+
+  let template = /* html */ `
+    <tr>
+      <td>${++count}</td> 
+      <td>${diceValue}</td>
+      <td>${(total += diceValue)}</td>
+    </tr>
+  `;
+  insertLast(".recordListWrapper tbody", template);
+  recordListWrapper.scrollTop = recordListWrapper.scrollHeight;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    event                                   */
+/* -------------------------------------------------------------------------- */
+
 const handleRollingDice = (() => {
-  let stopAnimation;
   let isRolling = false;
+  let stopAnimation;
 
   return () => {
     if (!isRolling) {
-      stopAnimation = setInterval(diceAnimation, 1000);
+      // console.log('첫번째 클릭');
+      stopAnimation = setInterval(diceAnimation, 100);
+
       disableElement(recordButton);
       disableElement(resetButton);
     } else {
+      // console.log('두번째 클릭');
       clearInterval(stopAnimation);
       enableElement(recordButton);
       enableElement(resetButton);
@@ -39,10 +78,14 @@ const handleRollingDice = (() => {
 
 const handleRecord = () => {
   visibleElement(recordListWrapper);
+  renderRecordListItem();
 };
 
 const handleReset = () => {
+  count = 0;
+  total = 0;
   invisibleElement(recordListWrapper);
+  clearContents(".recordListWrapper tbody");
 };
 
 rollingDiceButton.addEventListener("click", handleRollingDice);
