@@ -19,3 +19,5 @@
 - [x] Jujeob 공백이 입력된 경우 발생하는 이벤트 설정 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/16/commits/daad02e0fe0ea36c4c39afaba9561476619d6eb7)
 - [x] Jujeob 숫자형 문자열을 검사하는 typeOf 함수 생성 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/16/commits/5c1c85f774e5076fdb42cffdaae2abfb7af641e5)
 - [x] showAlert 함수를 통해 오류 메시지 출력 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/16/commits/6fe8fc8b82d543d57c6fb419707633d5d9a7d850)
+- [x] copy 유틸 함수 제작 및 shake 구현 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/17/commits/141cc2e0246fe9a7918a12fcc59d8c1609164e83)
+- [x] GSAP 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/17/commits/97524e6c4ce3a05f2216a431652e71d3ba6ccacd)
