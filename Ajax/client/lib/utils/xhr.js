@@ -6,16 +6,19 @@
   4: complete // 완료 
   */
 
-// xhrData 함수 만들기 method, url
+// TODO xhrData 함수 만들기 method, url
 
-function xhrData(method, url, body) {
+// * 객체로 받기 실습
+function xhrData(object) {
+  // 객체 구조 분해 할당
+  const { url, method, body, headers } = object;
   const xhr = new XMLHttpRequest();
 
-  // 비동기 통신 오픈
+  // * 비동기 통신 오픈
   xhr.open(method, url);
 
   xhr.addEventListener("readystatechange", () => {
-    const { status, readyState, response } = xhr; // 객체 구조 분해 할당
+    const { status, readyState, response } = xhr; // * 객체 구조 분해 할당
 
     if (status >= 200 && status < 400) {
       if (readyState === 4) {
@@ -27,29 +30,38 @@ function xhrData(method, url, body) {
     }
   });
 
-  // 서버에 요청
+  // * 서버에 요청
   xhr.send(JSON.stringify(body));
 }
 
-xhrData("POST", "https://jsonplaceholder.typicode.com/users", {
-  name: "ukss",
-  username: "seonguk",
-  email: "1872003115su@gmail.com",
-  address: {
-    street: "suyeong-ro",
-    suite: "Apt. 1102",
-    city: "Busan",
-    zipcode: "11111",
-    geo: {
-      lat: "-37.3159",
-      lng: "81.1496",
-    },
-  },
-  phone: "010-3330-6035",
-  website: "ukss.org",
-  company: {
-    name: "LIKELION",
-    catchPhrase: "Multi-layered client-server neural-net",
-    bs: "harness real-time e-markets",
+xhrData({
+  url: "https://jsonplaceholder.typicode.com/users",
+  method: "GET",
+  body: null,
+  headers: {
+    "Content-Type": "application/json",
   },
 });
+
+// xhrData("POST", "https://jsonplaceholder.typicode.com/users", {
+//   name: "ukss",
+//   username: "seonguk",
+//   email: "1872003115su@gmail.com",
+//   address: {
+//     street: "suyeong-ro",
+//     suite: "Apt. 1102",
+//     city: "Busan",
+//     zipcode: "11111",
+//     geo: {
+//       lat: "-37.3159",
+//       lng: "81.1496",
+//     },
+//   },
+//   phone: "010-3330-6035",
+//   website: "ukss.org",
+//   company: {
+//     name: "LIKELION",
+//     catchPhrase: "Multi-layered client-server neural-net",
+//     bs: "harness real-time e-markets",
+//   },
+// });
