@@ -1,6 +1,6 @@
-# Random Dice
+# Ajax
 
-> 2023.01.16(월) 에 진행했던 Random Dice 제작 실습이다.
+> 2023.01.16(월) 에 진행했던 Ajax 실습이다.
 
 ### Skill
 
@@ -12,11 +12,11 @@
 
 ### Process
 
-- [x] RandomDice 실습 환경 구축 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/19/commits/e5780327217dc3a63b302574e1639829aff9b57f)
-- [x] RandomDice 주사위 굴리기 애니메이션 구현 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/19/commits/54fdd0ac040210ad53dc62a1038253e8ccd51fe6)
-- [x] RandomDice 버튼 구조 분해 할당 사용 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/19/commits/a56e45128e0c02d2716f58d7e3015d16cac1abbf)
-- [x] RandomDice controlElement.js 제작 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/19/commits/b2c8b3dc39dbe33489a57912a50b02056d9ba1a6)
-- [x] RandomDice record, reset 버튼 구현 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/19/commits/858ce94f84e0ac25ddfe701175d6f961d8d9f02c)
-- [x] typeOf, getNode 업그레이드 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/19/commits/5ac4cf43e0b5d5970e747c4195da328558367860)
-- [x] RandomDice 레코드 템플릿 뿌리기 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/19/commits/f7abd430d5ec1bd7064bf646d5950f901d49eb8f)
-- [x] RandomDice 메모이제이션 패턴 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/19/commits/66086bee2bebf43b14c52dec47e1add4080cc36e)
+- [x] Ajax 실습 환경 구축 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/20/commits/ffc56968095c887d06d3afdb2b032d316be4ff12)
+- [x] Ajax xhrData 함수 제작 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/20/commits/68ee3d757bd3f8a57cd76cb6aa6f252da481aee2)
+- [x] Ajax xhr 구조 분해 할당 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/20/commits/c326e117dbf0ea63be8e5f37d1bf51b5dcfece92)
+- [x] Ajax xhr 객체로 받기 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/20/commits/96e55b790bae2055a3b512b4f6c894959fd653d2)
+- [x] Ajax onSuccess, onFail 추가 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/20/commits/aa92a88cc2af5c53fb4909a84961f21299701028)
+- [x] Ajax GET, POST, PUT, DELETE 메서드 정의 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/20/commits/7838109dd9a5cdf82c2e1ea0a377dce6e1fdf2e8)
+- [x] Ajax xhrData 사용해보기 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/20/commits/cbedc4625b8bdc1597c0a6916f02d0933123da04)
+- [x] Ajax delay 콜백 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/20/commits/303650447341bf41474b8277ebfdb36f387ad3a0)
