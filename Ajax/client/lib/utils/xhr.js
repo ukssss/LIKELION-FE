@@ -49,16 +49,63 @@ function xhrData({
   xhr.send(JSON.stringify(body));
 }
 
-xhrData({
-  // * 데이터 파일에서 id 값이 "1" 인 데이터를 가져오기 (GET)
-  url: "https://jsonplaceholder.typicode.com/users/1",
-  onSuccess: (result) => {
+xhrData.get = (url, onSuccess, onFail) => {
+  xhrData({
+    url,
+    onSuccess,
+    onFail,
+  });
+};
+
+xhrData.post = (url, body, onSuccess, onFail) => {
+  xhrData({
+    method: "POST",
+    body,
+    url,
+    onSuccess,
+    onFail,
+  });
+};
+
+xhrData.put = (url, body, onSuccess, onFail) => {
+  xhrData({
+    method: "PUT",
+    body,
+    url,
+    onSuccess,
+    onFail,
+  });
+};
+
+xhrData.delete = (url, body, onSuccess, onFail) => {
+  xhrData({
+    method: "DELETE",
+    url,
+    onSuccess,
+    onFail,
+  });
+};
+
+xhrData.get(
+  "https://jsonplaceholder.typicode.com/users",
+  (result) => {
     console.log(result);
   },
-  onFail: (err) => {
-    console.error(err);
-  },
-});
+  (err) => {
+    console.log(err);
+  }
+);
+
+// xhrData({
+//   // * 데이터 파일에서 id 값이 "1" 인 데이터를 가져오기 (GET)
+//   url: "https://jsonplaceholder.typicode.com/users/1",
+//   onSuccess: (result) => {
+//     console.log(result);
+//   },
+//   onFail: (err) => {
+//     console.error(err);
+//   },
+// });
 
 // xhrData("POST", "https://jsonplaceholder.typicode.com/users", {
 //   name: "ukss",
