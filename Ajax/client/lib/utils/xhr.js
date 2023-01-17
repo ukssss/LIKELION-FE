@@ -8,16 +8,19 @@
 
 // xhrData 함수 만들기 method, url
 
-function xhrData(method, url) {
+function xhrData(method, url, body) {
   const xhr = new XMLHttpRequest();
 
   // 비동기 통신 오픈
   xhr.open(method, url);
 
   xhr.addEventListener("readystatechange", () => {
-    if (xhr.status >= 200 && xhr.status < 400) {
-      if (xhr.readyState === 4) {
+    const { status, readyState, response } = xhr; // 객체 구조 분해 할당
+
+    if (status >= 200 && status < 400) {
+      if (readyState === 4) {
         console.log("통신 성공");
+        console.log(JSON.parse(response));
       }
     } else {
       console.error("통신 실패");
@@ -25,7 +28,28 @@ function xhrData(method, url) {
   });
 
   // 서버에 요청
-  xhr.send();
+  xhr.send(JSON.stringify(body));
 }
 
-xhrData("GET", "https://jsonplaceholder.typicode.com/users");
+xhrData("POST", "https://jsonplaceholder.typicode.com/users", {
+  name: "ukss",
+  username: "seonguk",
+  email: "1872003115su@gmail.com",
+  address: {
+    street: "suyeong-ro",
+    suite: "Apt. 1102",
+    city: "Busan",
+    zipcode: "11111",
+    geo: {
+      lat: "-37.3159",
+      lng: "81.1496",
+    },
+  },
+  phone: "010-3330-6035",
+  website: "ukss.org",
+  company: {
+    name: "LIKELION",
+    catchPhrase: "Multi-layered client-server neural-net",
+    bs: "harness real-time e-markets",
+  },
+});
