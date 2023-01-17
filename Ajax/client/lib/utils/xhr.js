@@ -9,7 +9,7 @@
 // TODO xhrData 함수 만들기 method, url
 
 // * 객체로 받기 실습
-function xhrData({
+export function xhrData({
   url = "",
   method = "GET",
   body = null,
@@ -85,16 +85,6 @@ xhrData.delete = (url, body, onSuccess, onFail) => {
     onFail,
   });
 };
-
-xhrData.get(
-  "https://jsonplaceholder.typicode.com/users",
-  (result) => {
-    console.log(result);
-  },
-  (err) => {
-    console.log(err);
-  }
-);
 
 // xhrData({
 //   // * 데이터 파일에서 id 값이 "1" 인 데이터를 가져오기 (GET)
