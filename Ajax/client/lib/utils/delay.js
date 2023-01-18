@@ -49,12 +49,18 @@ const defaultOptions = {
 };
 
 //* 실행을 1초 지연시키는 함수 생성
-function delayP(options = {}) {
+export function delayP(options = {}) {
   // defaultOptions
   let config = { ...defaultOptions };
 
+  if (isNumber(options)) {
+    config.timeout = options;
+  }
+
   // 객체 합성 mixin
-  config = { ...config, ...options };
+  if (isObject(options)) {
+    config = { ...config, ...options };
+  }
 
   const { shouldReject, data, errorMessage, timeout } = config;
 
@@ -65,8 +71,6 @@ function delayP(options = {}) {
   });
 }
 
-delayP({
-  data: "안녕",
-}).then((res) => {
+delayP(3000).then((res) => {
   console.log(res); // 진짜 성공
 });
