@@ -41,8 +41,23 @@ function delay(callback, timeout = 1000) {
 //     second.style.left = "0px";
 //   });
 
+const defaultOptions = {
+  shouldReject: false,
+  timeout: 1000,
+  data: "성공",
+  errorMessage: "알 수 없는 오류가 발생했습니다.",
+};
+
 //* 실행을 1초 지연시키는 함수 생성
-function delayP(shouldReject = false, timeout = 1000, data = "성공했습니다", errorMessage = "알 수 없는 오류가 발생했습니다") {
+function delayP(options = {}) {
+  // defaultOptions
+  let config = { ...defaultOptions };
+
+  // 객체 합성 mixin
+  config = { ...config, ...options };
+
+  const { shouldReject, data, errorMessage, timeout } = config;
+
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       !shouldReject ? resolve(data) : reject(errorMessage);
@@ -50,6 +65,8 @@ function delayP(shouldReject = false, timeout = 1000, data = "성공했습니다
   });
 }
 
-delayP(false, 1000, "진짜 성공", "오류가 발생했다!!").then((res) => {
+delayP({
+  data: "안녕",
+}).then((res) => {
   console.log(res); // 진짜 성공
 });
