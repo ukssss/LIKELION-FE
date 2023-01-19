@@ -1,3 +1,5 @@
+import { insertLast } from "../dom/insert.js";
+
 export const createUserCard = ({ id = "", name = "", email = "", website = "" } = {}) => {
   return /* html */ `
   <article class="user-card" data-index="user-${id}">
@@ -13,6 +15,10 @@ export const createUserCard = ({ id = "", name = "", email = "", website = "" } 
       <button class="delete">삭제</button>
     </article>
   `;
+};
+
+export const renderUserCard = (target, data) => {
+  insertLast(target, createUserCard(data));
 };
 
 console.log(
