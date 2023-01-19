@@ -1,18 +1,6 @@
 /* global gsap */
 
-import {
-  insertLast,
-  tiger,
-  delayP,
-  createUserCard,
-  getNode,
-  getNodes,
-  renderUserCard,
-  changeColor,
-  renderSpinner,
-  renderEmptyCard,
-  attr,
-} from "./lib/index.js";
+import { tiger, delayP, getNode, renderUserCard, changeColor, renderSpinner, renderEmptyCard, attr } from "./lib/index.js";
 
 // rendingUserList 함수 만들기
 // ajax (tiger) get user list
@@ -34,7 +22,7 @@ async function rendingUserList() {
     await delayP(2000);
     getNode(".loadingSpinner").remove();
 
-    let response = await tiger.get("https://jsonplaceholder.typicode.com/users");
+    let response = await tiger.get("http://localhost:3000/users");
     let userData = response.data;
 
     userData.forEach((data) => {
@@ -67,7 +55,10 @@ function handler(e) {
 
   let id = attr(article, "data-index").slice(5);
 
-  tiger.delete(`https://jsonplaceholder.typicode.com/users/${id}`);
+  tiger.delete(`http://localhost:3000/users/${id}`).then(() => {
+    userCardContainer.innerHTML = "";
+    rendingUserList();
+  });
 }
 
 userCardContainer.addEventListener("click", handler);

@@ -1,3 +1,5 @@
+/* global gsap */
+
 export const color = [
   { background: "#cb9a7f", color: "#9f3c2d" },
   { background: "#394335", color: "#DEC8C7" },
