@@ -51,6 +51,20 @@ function saveStorage(key, value) {
 
 saveStorage("name", albums);
 
+function loadStorage(key) {
+  return new Promise((resolve, reject) => {
+    if (isString(key)) {
+      resolve(deserialize(storage.getItem(key)));
+    } else {
+      reject({ message: "key는 문자 타입 이어야 합니다." });
+    }
+  });
+}
+
+loadStorage("name").then((res) => {
+  console.log(res);
+});
+
 // storage.setItem("name", "ukss");
 // console.log(storage.getItem("name"));
 // storage.clear();
