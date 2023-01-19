@@ -1,4 +1,4 @@
-import { getNode as $, loadStorage, saveStorage } from "./lib/index.js";
+import { deleteStorage, getNode as $, loadStorage, saveStorage } from "./lib/index.js";
 
 const textField = $("#textField");
 const deleteButton = $("input[value='삭제']");
@@ -11,4 +11,9 @@ function inputHandler() {
   saveStorage("area", textField.value);
 }
 
+function deleteHandler() {
+  deleteStorage("area");
+}
+
 textField.addEventListener("input", inputHandler);
+deleteButton.addEventListener("click", deleteHandler);
