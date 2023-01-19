@@ -88,21 +88,22 @@ export function delayP(options = {}) {
 
 // console.log(result);
 
-async function 라면끓이기() {
-  await delayP(1500);
-  console.log("냄비에 물 붓기");
+async function delayA() {
+  try {
+    await delayP();
+    first.style.top = "-100px";
+    console.log("1");
 
-  await delayP(1500);
-  console.log("끓으면 면 넣고 스프 넣기");
+    await delayP();
+    first.style.transform = "rotate(360deg)";
+    console.log("2");
 
-  await delayP(1500);
-  console.log("면이 익으면 면은 그릇에 건지고 계란 투척");
-
-  await delayP(1500);
-  console.log("익은 계란과 국물을 그릇에 담기");
-
-  await delayP(1500);
-  console.log("맛있게 먹기!");
+    await delayP();
+    first.style.top = "0px";
+    console.log("3");
+  } catch (err) {
+    console.log(err);
+  }
 }
 
-라면끓이기();
+delayA();
