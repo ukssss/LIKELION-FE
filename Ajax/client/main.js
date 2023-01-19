@@ -22,7 +22,7 @@ async function rendingUserList() {
     await delayP(2000);
     getNode(".loadingSpinner").remove();
 
-    let response = await tiger.get("https://jsonplaceholder.typicode.com/users");
+    let response = await tiger.get("https://jsonplaceholder.typicode.com/users범쌤바보");
     let userData = response.data;
 
     userData.forEach((data) => {
@@ -38,6 +38,7 @@ async function rendingUserList() {
       stagger: 0.2,
     });
   } catch (err) {
+    renderEmptyCard(userCardContainer);
     console.log(err);
   }
 }
