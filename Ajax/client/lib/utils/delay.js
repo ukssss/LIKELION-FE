@@ -105,5 +105,3 @@ async function delayA() {
     console.log(err);
   }
 }
-
-delayA();

@@ -1,4 +1,4 @@
-import { insertLast, xhrData, xhrPromise } from "./lib/index.js";
+import { insertLast, xhrData, xhrPromise, ukss, delayP } from "./lib/index.js";
 
 // xhrPromise
 //   .get("https://jsonplaceholder.typicode.com/users/1")
@@ -8,3 +8,12 @@ import { insertLast, xhrData, xhrPromise } from "./lib/index.js";
 //   .catch((err) => {
 //     console.log(err);
 //   });
+
+async function render() {
+  await delayP(2000);
+  let response = await ukss.get("https://jsonplaceholder.typicode.com/users/1");
+
+  console.log(response.data);
+}
+
+render();
