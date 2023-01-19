@@ -1,6 +1,6 @@
 # Ajax
 
-> 2023.01.16(월) 에 진행했던 Ajax 실습이다.
+> 2023.01.17 - 01.19, 총 3 일간 진행했던 Ajax 실습 정리본
 
 ### Skill
 
@@ -35,3 +35,12 @@
 - [x] async await 를 사용해서 라면끓이기 함수 생성 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/21/commits/f93c8b451390ddf535a5c60a7c68550867827f3a)
 - [x] try..catch 구문 실습 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/21/commits/0b09b2513c4453b8404f45ecb591611dbd3c91ad)
 - [x] ukss 함수 생성 및 ukss 가져와 사용하기 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/21/commits/cd411ec0f6587024e1b0e2c9c27f76bac867496c)
+
+**20230119**
+
+- [x] createUserCard, renderUserCard 생성 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/22/commits/41281d033caadfd8c837d572edc22885f6ada7c3)
+- [x] userData 전체 렌더링 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/22/commits/a3c46d77fa89e9772f47b6a19ad1932333e4d377)
+- [x] spinner 생성 및 렌더링 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/22/commits/b7ac6eba32a1463f9eb9f33f4dde2791a239f6a6)
+- [x] emptyCard 생성 및 렌더링 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/22/commits/da9ff20ad75a8d99101808e98ea46c3c3002eef0)
+- [x] 서버 연결 및 delete 통신 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/22/commits/bb48f9a1cfdbf5897a605523fc7462f4946cea1a)
+- [x] async, await 사용 delete 통신 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/22/commits/ed3cda1fa26745d593e2a3403d9f33f2b32aa1bd)
