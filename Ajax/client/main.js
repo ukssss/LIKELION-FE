@@ -1,6 +1,18 @@
 /* global gsap */
 
-import { insertLast, tiger, delayP, createUserCard, getNode, renderUserCard, changeColor, renderSpinner, renderEmptyCard } from "./lib/index.js";
+import {
+  insertLast,
+  tiger,
+  delayP,
+  createUserCard,
+  getNode,
+  getNodes,
+  renderUserCard,
+  changeColor,
+  renderSpinner,
+  renderEmptyCard,
+  attr,
+} from "./lib/index.js";
 
 // rendingUserList 함수 만들기
 // ajax (tiger) get user list
@@ -22,7 +34,7 @@ async function rendingUserList() {
     await delayP(2000);
     getNode(".loadingSpinner").remove();
 
-    let response = await tiger.get("https://jsonplaceholder.typicode.com/users범쌤바보");
+    let response = await tiger.get("https://jsonplaceholder.typicode.com/users");
     let userData = response.data;
 
     userData.forEach((data) => {
@@ -44,3 +56,18 @@ async function rendingUserList() {
 }
 
 rendingUserList();
+
+// 삭제 버튼을 클릭하면 콘솔창에 '삭제' 글자가 출력이 될 수 있도록 만들어 주세요.
+
+function handler(e) {
+  let deleteButton = e.target.closest("button");
+  let article = e.target.closest("article");
+
+  if (!deleteButton || !article) return;
+
+  let id = attr(article, "data-index").slice(5);
+
+  tiger.delete(`https://jsonplaceholder.typicode.com/users/${id}`);
+}
+
+userCardContainer.addEventListener("click", handler);
