@@ -66,7 +66,7 @@ async function rendingUserList() {
 rendingUserList();
 
 // TODO 삭제 버튼을 클릭하면 콘솔창에 '삭제' 글자가 출력이 될 수 있도록 만들기
-function handler(e) {
+async function handler(e) {
   let deleteButton = e.target.closest("button");
   let article = e.target.closest("article");
 
@@ -75,10 +75,15 @@ function handler(e) {
 
   let id = attr(article, "data-index").slice(5);
 
-  ukss.delete(`http://localhost:3000/users/${id}`).then(() => {
-    userCardContainer.innerHTML = "";
-    rendingUserList();
-  });
+  // ukss.delete(`http://localhost:3000/users/${id}`).then(() => {
+  //   userCardContainer.innerHTML = "";
+  //   rendingUserList();
+  // });
+
+  // * async await
+  await ukss.delete(`http://localhost:3000/users/${id}`);
+  userCardContainer.innerHTML = "";
+  rendingUserList();
 }
 
 userCardContainer.addEventListener("click", handler);
