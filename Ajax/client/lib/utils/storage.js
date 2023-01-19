@@ -38,7 +38,7 @@ const albums = [
 // serialize()
 // deserialize()
 
-function saveStorage(key, value) {
+export function saveStorage(key, value) {
   return new Promise((resolve, reject) => {
     if (isString(key)) {
       storage.setItem(key, serialize(value));
@@ -49,9 +49,7 @@ function saveStorage(key, value) {
   });
 }
 
-saveStorage("name", albums);
-
-function loadStorage(key) {
+export function loadStorage(key) {
   return new Promise((resolve, reject) => {
     if (isString(key)) {
       resolve(deserialize(storage.getItem(key)));
@@ -61,9 +59,16 @@ function loadStorage(key) {
   });
 }
 
-loadStorage("name").then((res) => {
-  console.log(res);
-});
+export function deleteStorage(key) {
+  return new Promise((resolve, reject) => {
+    if (isString(key)) {
+      !key ? storage.clear() : storage.removeItem(key);
+      resolve();
+    } else {
+      reject({ message: "key는 문자 타입 이어야 합니다." });
+    }
+  });
+}
 
 // storage.setItem("name", "ukss");
 // console.log(storage.getItem("name"));
