@@ -1,6 +1,6 @@
 /* global gsap */
 
-import { insertLast, xhrData, xhrPromise, ukss, delayP, getNode, renderUserCard, renderSpinner, changeColor, renderEmptyCard } from "./lib/index.js";
+import { insertLast, xhrData, xhrPromise, ukss, delayP, getNode, renderUserCard, renderSpinner, changeColor, renderEmptyCard, attr } from "./lib/index.js";
 
 // xhrPromise
 //   .get("https://jsonplaceholder.typicode.com/users/1")
@@ -42,7 +42,7 @@ async function rendingUserList() {
     await delayP(2000);
     getNode(".loadingSpinner").remove();
 
-    let response = await ukss.get("https://jsonplaceholder.typicode.com/users");
+    let response = await ukss.get("http://localhost:3000/users");
     let userData = response.data;
 
     userData.forEach((data) => {
@@ -64,3 +64,21 @@ async function rendingUserList() {
 }
 
 rendingUserList();
+
+// TODO 삭제 버튼을 클릭하면 콘솔창에 '삭제' 글자가 출력이 될 수 있도록 만들기
+function handler(e) {
+  let deleteButton = e.target.closest("button");
+  let article = e.target.closest("article");
+
+  // * 버튼이 아니면 실행 X, 누른 대상의 인접한 대상이 article이 아니면 실행 X
+  if (!deleteButton || !article) return;
+
+  let id = attr(article, "data-index").slice(5);
+
+  ukss.delete(`http://localhost:3000/users/${id}`).then(() => {
+    userCardContainer.innerHTML = "";
+    rendingUserList();
+  });
+}
+
+userCardContainer.addEventListener("click", handler);
