@@ -34,10 +34,12 @@ import { insertLast, xhrData, xhrPromise, ukss, delayP, getNode, renderUserCard 
 const userCardContainer = getNode(".user-card-inner");
 
 async function rendingUserList() {
-  let response = await ukss.get("https://jsonplaceholder.typicode.com/users/1");
+  let response = await ukss.get("https://jsonplaceholder.typicode.com/users");
   let userData = response.data;
 
-  renderUserCard(userCardContainer, userData);
+  userData.forEach((data) => {
+    renderUserCard(userCardContainer, data);
+  });
 }
 
 rendingUserList();
