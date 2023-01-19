@@ -100,7 +100,7 @@ const defaultOptions = {
   body: null,
 };
 
-function xhrPromise(options = {}) {
+export function xhrPromise(options = {}) {
   const xhr = new XMLHttpRequest();
 
   const { method, url, body, headers } = Object.assign({}, defaultOptions, options);

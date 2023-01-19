@@ -74,3 +74,13 @@ export function delayP(options = {}) {
 delayP().then((res) => {
   console.log(res); // 진짜 성공
 });
+
+// * async await
+
+async function delayA() {
+  return "완료";
+}
+
+let result = await delayA();
+
+console.log(result);
