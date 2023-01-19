@@ -5,3 +5,4 @@ export * from "./memo.js";
 export * from "./typeOf.js";
 export * from "./tiger.js";
 export * from "./userList.js";
+export * from "./theme.js";
