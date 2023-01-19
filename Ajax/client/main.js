@@ -1,6 +1,6 @@
 /* global gsap */
 
-import { insertLast, xhrData, xhrPromise, ukss, delayP, getNode, renderUserCard, renderSpinner, changeColor } from "./lib/index.js";
+import { insertLast, xhrData, xhrPromise, ukss, delayP, getNode, renderUserCard, renderSpinner, changeColor, renderEmptyCard } from "./lib/index.js";
 
 // xhrPromise
 //   .get("https://jsonplaceholder.typicode.com/users/1")
@@ -58,7 +58,8 @@ async function rendingUserList() {
       stagger: 0.2,
     });
   } catch (err) {
-    console.log(err);
+    console.error(err);
+    renderEmptyCard(userCardContainer);
   }
 }
 
