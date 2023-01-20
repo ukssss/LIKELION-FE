@@ -1,6 +1,6 @@
-export * from "./typeOf.js";
-export * from "./copy.js";
-export * from "./memo.js";
-export * from "./xhr.js";
-export * from "./delay.js";
-export * from "./storage.js";
+// re-export
+export * from "./dom/index.js";
+export * from "./error/index.js";
+export * from "./math/index.js";
+export * from "./utils/index.js";
+export * from "./animation/index.js";

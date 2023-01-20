@@ -1,19 +1,11 @@
-import { deleteStorage, getNode as $, loadStorage, saveStorage } from "./lib/index.js";
+import { xhrData, insertLast } from "./lib/index.js";
 
-const textField = $("#textField");
-const deleteButton = $("input[value='삭제']");
-
-loadStorage("area").then((res) => {
-  textField.value = res;
-});
-
-function inputHandler() {
-  saveStorage("area", textField.value);
-}
-
-function deleteHandler() {
-  deleteStorage("area");
-}
-
-textField.addEventListener("input", inputHandler);
-deleteButton.addEventListener("click", deleteHandler);
+// xhrData.get(
+//   "https://jsonplaceholder.typicode.com/users/1",
+//   (res) => {
+//     insertLast("body", JSON.stringify(res));
+//   },
+//   (err) => {
+//     insertLast("body", "데이터 로딩에 실패했습니다.");
+//   }
+// );
