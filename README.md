@@ -20,7 +20,7 @@
 
 **Javascript**
 
-- [x] CORE-JAVASCRIPT (2022.12.27 - ) [바로가기](https://github.com/ukssss/LIKELION-FE/tree/main/CORE-JAVASCRIPT)
+- [x] CORE-JAVASCRIPT (2022.12.27 - 2023.01.11) [바로가기](https://github.com/ukssss/LIKELION-FE/tree/main/CORE-JAVASCRIPT)
 - [x] Lotto (2023.01.02) [바로가기](https://github.com/ukssss/LIKELION-FE/tree/main/Lotto)
 - [x] LetterCount (2023.01.02) [바로가기](https://github.com/ukssss/LIKELION-FE/tree/main/LetterCount)
 - [x] StarCraft (2023.01.02) [바로가기](https://github.com/ukssss/LIKELION-FE/tree/main/StarCraft)
@@ -29,6 +29,9 @@
 - [x] Delegation Practice (2023.01.12) [바로가기](https://github.com/ukssss/LIKELION-FE/tree/main/delegation-practice)
 - [x] Calculator (2023.01.13) [바로가기](https://github.com/ukssss/LIKELION-FE/tree/main/JS-Calculator)
 - [x] Jujeob Generator (2023.01.13) [바로가기](https://github.com/ukssss/LIKELION-FE/tree/main/JS-Jujeob)
+- [x] Random Dice (2023.01.16) [바로가기](https://github.com/ukssss/LIKELION-FE/tree/main/RandomDice)
+- [x] Ajax (2023.01.17 - 2023.01.19) [바로가기](https://github.com/ukssss/LIKELION-FE/tree/main/Ajax)
+- [x] Storage (2023.01.19) [바로가기](https://github.com/ukssss/LIKELION-FE/tree/main/Storage)
 
 **React**
 
