@@ -4,5 +4,4 @@ Hello World!
 2. i -> Insert Mode (입력모드)
 3. esc -> 모드 종료
 4. : -> 명령창 실행, w -> Write, q -> Quit
-=> :wq 로 저장 및 편집 종료
-
+   => :wq 로 저장 및 편집 종료
