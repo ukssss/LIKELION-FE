@@ -22,3 +22,18 @@
 - [x] 체크아웃 정리 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/25/commits/ba394bfe829c981699b1e31b2e8172c36aa0949e)
 - [x] 브랜치 정의 추가 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/25/commits/46a0cf29c305b66a406d2fe30a5a70c7235b16b7)
 - [x] Merge 테스트용 [바로가기](https://github.com/ukssss/LIKELION-FE/pull/25/commits/d431afb22dc12c30ceddd544c1c4eac7f3911fdb)
+
+**Git Practice 실습 정리**
+
+- [x] Merge
+      [Merge1](https://github.com/ukssss/LIKELION-FE/pull/26/commits/187769909f4a090d5ea2972a6ed4e67b9248f065)
+      [자동 머지 매커니즘 실습](https://github.com/ukssss/LIKELION-FE/pull/26/commits/25de245e403b9f94e632f8000f5032d26c9449c0)
+      ["hojin" > "git-practice" (Merge)](https://github.com/ukssss/LIKELION-FE/pull/26/commits/5852404e5b645bd18b41803272719dee01468328)
+      ["jimin" > "git-practice" (Merge)](https://github.com/ukssss/LIKELION-FE/pull/26/commits/b9c3798000cccc3375c0d3b7a8ef26c8002522e4)
+- [x] Merge Conflict
+      [머지 충돌 실습](https://github.com/ukssss/LIKELION-FE/pull/26/commits/6794fbd11ae76163315970142badb83561905f99)
+- [x] Rebase
+      [Rebase 정리](https://github.com/ukssss/LIKELION-FE/pull/26/commits/f1097d60aedd98453c50628a735312669312349e)
+- [x] Connect to Git Repository
+      [Connect GitHub Repository](https://github.com/ukssss/LIKELION-FE/pull/26/commits/4e7a02e3b2f5c1d2f1aefef0340fe95425f127ca)
+      [Practice Space](https://github.com/ukssss/babylion-fe-4)
