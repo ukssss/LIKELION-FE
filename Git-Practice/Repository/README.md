@@ -4,6 +4,6 @@
   : git init 생성
 
 - 브랜치 정의
-  : A branch in Git is simply a lightweight movable pointer
+  : A branch in Git is simply a lightweight movable pointer to one of these commits
 
 - Modify README
