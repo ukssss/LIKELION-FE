@@ -7,9 +7,15 @@
     "dev": "nodemon backend/server.js",
     "compile": "babel frontend/src -d frontend/public/scripts"
   },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
   "devDependencies": {
     "@babel/cli": "^7.20.7",
     "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
     "live-server": "1.2.2",
     "nodemon": "2.0.20"
   }
