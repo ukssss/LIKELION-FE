@@ -39,7 +39,7 @@ var App = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/React.createElement("h1", null, this.state.headline), /*#__PURE__*/React.createElement("button", {
         type: "button",
         onClick: this.handleChangeHeadline
-      }, "\uD5E4\uB4DC\uB77C\uC778 \uBCC0\uACBD"));
+      }, "\uD5E4\uB4DC\uB77C\uC778 \uC5C5\uB370\uC774\uD2B8"));
     }
   }]);
   return App;

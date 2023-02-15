@@ -20,7 +20,7 @@ class App extends React.Component {
       <div data-component='App'>
         <h1>{this.state.headline}</h1>
         <button type='button' onClick={this.handleChangeHeadline}>
-          헤드라인 변경
+          헤드라인 업데이트
         </button>
       </div>
     );
