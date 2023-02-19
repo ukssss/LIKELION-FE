@@ -14,6 +14,7 @@ function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _ty
 function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 import LogIn from './pages/LogIn.js';
 import Browse from './pages/Browse.js';
+import Home from './pages/Home.js';
 var App = /*#__PURE__*/function (_React$Component) {
   _inherits(App, _React$Component);
   var _super = _createSuper(App);
@@ -100,6 +101,7 @@ var App = /*#__PURE__*/function (_React$Component) {
           role: "alert"
         }, this.state.hasError.message);
       }
+      return /*#__PURE__*/React.createElement(Home, null);
       return /*#__PURE__*/React.createElement("div", {
         className: "App"
       }, /*#__PURE__*/React.createElement("h1", null, headline), /*#__PURE__*/React.createElement("button", {

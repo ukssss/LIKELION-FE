@@ -1,5 +1,6 @@
 import LogIn from './pages/LogIn.js';
 import Browse from './pages/Browse.js';
+import Home from './pages/Home.js';
 
 class App extends React.Component {
   // 조건부 렌더링 (CSR) vs 조건부 표시 (CSS : display, visibility, overflow, opacity)
@@ -84,6 +85,8 @@ class App extends React.Component {
     if (this.state.hasError) {
       return <div role='alert'>{this.state.hasError.message}</div>;
     }
+
+    return <Home />;
 
     return (
       <div className='App'>
