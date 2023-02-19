@@ -12,11 +12,11 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
 function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+import { likeLionMembers } from '../data/likeLionMembers.js';
 var Home = /*#__PURE__*/function (_React$Component) {
   _inherits(Home, _React$Component);
   var _super = _createSuper(Home);
   function Home() {
-    var _this$props$likeLionM;
     var _this;
     _classCallCheck(this, Home);
     for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
@@ -24,32 +24,64 @@ var Home = /*#__PURE__*/function (_React$Component) {
     }
     _this = _super.call.apply(_super, [this].concat(args));
     _defineProperty(_assertThisInitialized(_this), "state", {
-      members: (_this$props$likeLionM = _this.props.likeLionMembers) !== null && _this$props$likeLionM !== void 0 ? _this$props$likeLionM : []
+      members: likeLionMembers
     });
-    _defineProperty(_assertThisInitialized(_this), "handleFilterLab", function () {
+    _defineProperty(_assertThisInitialized(_this), "initialMembers", likeLionMembers);
+    _defineProperty(_assertThisInitialized(_this), "labCount", _this.calcLabCount());
+    _defineProperty(_assertThisInitialized(_this), "handleFilterLab", function (labNumber) {
       _this.setState({
-        members: _this.state.members.filter(function (member) {
-          // 로직
-          return member.lab === 9;
+        members: _this.initialMembers.filter(function (member) {
+          return member.lab === labNumber;
         })
       });
     });
     return _this;
   }
   _createClass(Home, [{
+    key: "calcLabCount",
+    value: function calcLabCount() {
+      // 데이터 분석
+
+      // 무엇을 해야 할까?
+      // - 105 개의 데이터를 순회해서 lab 의 갯수가 몇 개인지를 확인해야 함
+      var labSet = new Set();
+      this.state.members.forEach(function (_ref) {
+        var lab = _ref.lab;
+        return labSet.add(lab);
+      });
+
+      // 그걸 하려면 어떤 로직을 짜야 하는가
+      // - 배열? 아니면 다른 데이터를 분류?
+
+      // 그러면 결과 값은 무엇을 내보내야 하는가
+      // - 랩의 갯수
+
+      return labSet.size;
+    }
+  }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h2", null, "\uBA4B\uC7C1\uC774 \uC0AC\uC790\uCC98\uB7FC \uD504\uB860\uD2B8\uC5D4\uB4DC \uC2A4\uCFE8 4\uAE30 \uBA64\uBC84"), /*#__PURE__*/React.createElement("button", {
-        type: "button",
+      var _this2 = this,
+        _this$state;
+      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h2", null, "\uBA4B\uC7C1\uC774 \uC0AC\uC790\uCC98\uB7FC \uD504\uB860\uD2B8\uC5D4\uB4DC \uC2A4\uCFE8 4\uAE30 \uBA64\uBC84"), /*#__PURE__*/React.createElement("div", {
+        role: "group",
         style: {
-          marginBottom: 20
-        },
-        onClick: this.handleFilterLab
-      }, "LAB 9 \uC870 \uBAA8\uC5EC !"), /*#__PURE__*/React.createElement("ul", null, this.state.members.map(function (_ref) {
-        var id = _ref.id,
-          lab = _ref.lab,
-          name = _ref.name,
-          gender = _ref.gender;
+          display: 'flex',
+          gap: 8
+        }
+      }, Array(this.labCount).fill().map(function (_, index) {
+        var labIndex = index + 1;
+        return /*#__PURE__*/React.createElement(LabButton, {
+          key: "lab-button-".concat(index),
+          onFilter: function onFilter() {
+            return _this2.handleFilterLab(labIndex);
+          }
+        }, "LAB ", labIndex);
+      })), /*#__PURE__*/React.createElement("ul", null, (_this$state = this.state) === null || _this$state === void 0 ? void 0 : _this$state.members.map(function (_ref2) {
+        var id = _ref2.id,
+          lab = _ref2.lab,
+          name = _ref2.name,
+          gender = _ref2.gender;
         return /*#__PURE__*/React.createElement("li", {
           key: id
         }, /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("b", null, lab), /*#__PURE__*/React.createElement("span", null, gender !== null && gender !== void 0 && gender.includes('여성') ? '🙆🏻‍♀️' : '🙆🏻‍♂️'), name));
@@ -58,4 +90,13 @@ var Home = /*#__PURE__*/function (_React$Component) {
   }]);
   return Home;
 }(React.Component);
+function LabButton(props) {
+  return /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    style: {
+      marginBottom: 20
+    },
+    onClick: props.onFilter
+  }, props.children);
+}
 export default Home;

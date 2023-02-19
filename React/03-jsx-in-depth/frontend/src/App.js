@@ -1,7 +1,7 @@
 import LogIn from './pages/LogIn.js';
 import Browse from './pages/Browse.js';
 import Home from './pages/Home.js';
-import { likeLionMembers } from './data/likeLionMembers.js';
+// import { likeLionMembers } from './data/likeLionMembers.js';
 
 class App extends React.Component {
   state = {
@@ -12,7 +12,7 @@ class App extends React.Component {
     isToggle: false,
     isLoading: !true,
     hasError: null,
-    likeLionMembers,
+    // likeLionMembers,
   };
 
   originalHeadline = this.state.headline;
@@ -43,7 +43,7 @@ class App extends React.Component {
       return <div role='alert'>{hasError.message}</div>;
     }
 
-    return <Home likeLionMembers={likeLionMembers} />;
+    return <Home />;
 
     return (
       <div className='App'>
