@@ -32,39 +32,12 @@ var App = /*#__PURE__*/function (_React$Component) {
       isPaid: true,
       isToggle: false,
       isLoading: !true,
-      hasError: null // { message: '서버에서 적절하지 않은 요청이 있었다는 응답이 있었습니다.'},
+      hasError: null
     });
     _defineProperty(_assertThisInitialized(_this), "originalHeadline", _this.state.headline);
     _defineProperty(_assertThisInitialized(_this), "willUpdateHeadline", 'NEW HEADLINE! 😀');
-    _defineProperty(_assertThisInitialized(_this), "unknown", null);
     _defineProperty(_assertThisInitialized(_this), "handleChangeHeadline", function () {
-      var error = _this.state.hasError;
-
-      // 1. 문
-      // if (error === null || error === undefined) {
-      //   console.log('현재 앱에는 오류(error)가 발생하지 않았습니다.');
-      // }
-
-      // 2. 터너리 (삼항)
-      // error === null || error === undefined ? console.log('현재 앱에는 오류(error)가 발생하지 않았습니다.') : null;
-
-      // 3. null 병합 연산자
-      // error ?? console.log('현재 앱에는 오류(error)가 발생하지 않았습니다.');
-
-      // 옵셔널 체이닝을 사용한 조건 처리
-      // error && typeof error.log === 'function' && error.log();
-
-      // let error = {
-      //   log() {
-      //     console.log('this is logger');
-      //   },
-      // };
-
-      // error.log?.();
-
       if (_this.state.isToggle) {
-        // 조건 처리
-        // 문을 사용할 것인가?
         _this.setState({
           isToggle: false,
           headline: _this.originalHeadline
@@ -75,12 +48,6 @@ var App = /*#__PURE__*/function (_React$Component) {
           headline: _this.willUpdateHeadline
         });
       }
-
-      // 아니면 식을 사용할 것인가?
-      // this.setState({
-      //   headline: 'NEW HEADLINE! 😀',
-      //   isDisabled: true,
-      // });
     });
     return _this;
   }
@@ -88,24 +55,25 @@ var App = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       var _this$state = this.state,
+        isLoading = _this$state.isLoading,
         isToggle = _this$state.isToggle,
         isPaid = _this$state.isPaid,
-        headline = _this$state.headline;
-      if (this.state.isLoading) {
+        headline = _this$state.headline,
+        hasError = _this$state.hasError;
+      if (isLoading) {
         return /*#__PURE__*/React.createElement("div", {
           role: "alert"
         }, "\uB370\uC774\uD130 \uB85C\uB529 \uC911...");
       }
-      if (this.state.hasError) {
+      if (hasError) {
         return /*#__PURE__*/React.createElement("div", {
           role: "alert"
-        }, this.state.hasError.message);
+        }, hasError.message);
       }
       return /*#__PURE__*/React.createElement(Home, null);
       return /*#__PURE__*/React.createElement("div", {
         className: "App"
       }, /*#__PURE__*/React.createElement("h1", null, headline), /*#__PURE__*/React.createElement("button", {
-        // disabled={this.state.isDisabled}
         type: "button",
         onClick: this.handleChangeHeadline
       }, isToggle ? '오리지널 헤드라인으로 변경' : '뉴 헤드라인으로 변경'), /*#__PURE__*/React.createElement(LogIn, null), isPaid && /*#__PURE__*/React.createElement(Browse, null));
