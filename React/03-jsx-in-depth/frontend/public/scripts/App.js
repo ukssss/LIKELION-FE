@@ -77,9 +77,7 @@ var App = /*#__PURE__*/function (_React$Component) {
       };
       return /*#__PURE__*/React.createElement("div", {
         "data-component": "App"
-      }, /*#__PURE__*/React.createElement("h1", {
-        style: "display: none;"
-      }, headline), /*#__PURE__*/React.createElement("button", {
+      }, /*#__PURE__*/React.createElement("h1", null, headline), /*#__PURE__*/React.createElement("button", {
         // disabled={this.state.isDisabled}
         type: "button",
         onClick: this.handleChangeHeadline
