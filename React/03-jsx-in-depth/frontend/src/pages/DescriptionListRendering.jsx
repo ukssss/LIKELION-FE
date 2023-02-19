@@ -1,6 +1,6 @@
 import { likeLionMembers } from '../data/likeLionMembers.js';
 
-class Home extends React.Component {
+class DescriptionListRendering extends React.Component {
   state = {
     descriptionList: {
       api: 'Application Programming Interface',
@@ -33,4 +33,4 @@ class Home extends React.Component {
   }
 }
 
-export default Home;
+export default DescriptionListRendering;
