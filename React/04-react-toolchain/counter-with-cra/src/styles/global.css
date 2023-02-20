@@ -1,0 +1,11 @@
+@media print {
+  abbr[title] {
+    cursor: help;
+  }
+
+  @media print {
+    abbr[title]::after {
+      content: ' (' attr(title) ')';
+    }
+  }
+}
