@@ -1,0 +1,11 @@
+{
+  "name": "m-vanilla-vs-react",
+  "version": "1.0.0",
+  "description": "Vanilla 프로그래밍 방식과 React 프로그래밍 방식을 비교합니다.",
+  "main": "react.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ukss",
+  "license": "ISC"
+}
